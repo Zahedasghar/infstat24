@@ -1,5 +1,123 @@
 ---
-title: "Course Title"
+title: "Inferential Statistics"
 ---
 
-Course info & details here
+# Course Description
+
+In this course, you'll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students
+are required to finish computer-based assignments. I wish that you learn stuff in this class in a way **learning** is fixed and
+**timing** will be a *variable* but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not
+be able to learn well and perform good in the course. 
+
+**Pre-requisite: Basic Statistics or special approval needed**
+
+## Learning Objectives 
+
+At the end of this course, the student should be able to: 
+
+ -  Define and summarize research design and data collection principles and concepts.
+ -  Create and interpret graphical data summaries.
+ -  Calculate and interpret summary statistics.
+ -  Calculate probabilities.
+ -  Understand inferential statistics.
+ -  Perform hypothesis tests for numerical and categorical data
+ -  Calculate confidence interval for numerical and categorical data
+ -  ANOVA
+
+# Required Readings
+
+```{r, echo = FALSE, results="asis", eval=F}
+#bib["vasquez2009twp", "wagner2007ws"]
+```
+
+1.  Christopher D. Barr, David M. Diez, and Mine Çetinkaya-Rundel, OpenIntro Statistics Textbook by
+Center for Open Education 
+2.  David Freedman, Robert Pisani, Roger Purves, Statistics 4th Edition,John Wiley & Sons, New York.
+3.  We will use the latest free version of: R Studio; You'll first need
+    to download (R). JAMOVI/Excel in R is very user friendly way which will
+    also be used.
+
+# Course Policy
+
+I will detail the policy for this course below. Basically, don't cheat
+and try to learn stuff. Don't be that guy.
+
+## Grading Policy
+
+-   **25%** of your grade will be determined by a midterm exam.
+
+-   **10%** of your grade will be determined by Quiz in class.
+
+-   **15%** of your grade will be determined by your attendance and
+    participation in class, and homework. Generally, ask questions and
+    answer them.
+
+-   **20%** of your grade will be determined by a 20-page term paper on
+    when exactly "The Love Boat" jumped the proverbial shark. You will
+    address whether this shark-jumping can be attributed to Ted
+    McGinley, the introduction of Jill Whelan as "Vicki", or some other
+    cause.
+
+-   **50%** of your grade will be determined by a final exam.
+
+## Attendance Policy
+
+
+
+> *Showing up is 80 percent of life* -- Woody Allen, [via Marshall
+> Brickman](http://quoteinvestigator.com/2013/06/10/showing-up/#note-6553-1)
+
+Students should be weary of skipping class. I deduct *all* participation
+points for a class after five unexcused absences and this can have
+important implications for a student's overall grade in the class.
+
+## Late Arrival of the Professor Policy
+
+I will inform students via e-mail/others in advance of class if class is
+cancelled for the day due to some unavoidable reason(s).
+
+## E-mail/Social Media Policy
+
+I am usually quick to respond to student messages sent through e-mails.
+However, student other e-media messages are some times send messages
+which dont need any response from my side and they can visit me in my
+office hours.
+
+## Make-Up Exam Policy
+
+There are **NO** make-ups for missed exams. Don't bother asking.
+
+## Academic Dishonesty Policy
+
+Don't cheat. Don't be that guy. Yes, you. You know exactly what I'm
+talking about too.
+
+
+# Class Schedule
+
+Here is that calendar but may change as per time table of School of
+Economics.
+
+
+| Week    | Topic Covered                                         | Book Chapter |
+|---------|-------------------------------------------------------|--------------|
+| Week #1 | Introduction to types of studies                                         | OpenIntro and FM Ch.1          |
+| Week #2 | Introduction to data  | OI Ch1        |
+| Week#3  | Review of Probability + R/STATA/JAMOVI | OI Ch2 , FM Ch3       |
+| Week#4  | Review of Distribution of Random Variables                                | OI Ch3 +HW#1   |
+| Week#5  | Foundations of Statistical Inference                            | OI Ch4 +Quiz#1     |
+| Week#6  | continued                             | OI Ch4         |
+| Week#7  | continued                         | OI Ch4+HW#2   |
+| Week#8  |            Inference for categorical data            | OI Ch5       |
+| Week#9  | continued                       | SW7+Quiz#2     |
+|         | Mid Term Exam as per SOE date sheet                   |              |
+| Week#11 | Inference for numerical data                                 | OI ch6     |
+| Week#12 | continued                       | OI ch6        |
+| Week#13 | continued                                 | OI ch6        |
+| Week#14 | ANOVA and inference for linear regression                                         |OI ch6 & 7    |
+| Week#15 | Discussion of Empirical Study                        |              |
+| Week#16 | Wrap up                                               |              |
+
+: Tentative Schedule 
+(Little variation maybe there as per topic/students need)
+
