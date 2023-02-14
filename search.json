@@ -2,16 +2,65 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Course Title",
+    "title": "Inferential Statistics",
     "section": "",
-    "text": "Course info & details here"
+    "text": "In this course, you’ll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students are required to finish computer-based assignments. I wish that you learn stuff in this class in a way learning is fixed and timing will be a variable but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not be able to learn well and perform good in the course.\nPre-requisite: Basic Statistics or special approval needed\n\n\nAt the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA"
+  },
+  {
+    "objectID": "index.html#grading-policy",
+    "href": "index.html#grading-policy",
+    "title": "Inferential Statistics",
+    "section": "Grading Policy",
+    "text": "Grading Policy\n\n25% of your grade will be determined by a midterm exam.\n10% of your grade will be determined by Quiz in class.\n15% of your grade will be determined by your attendance and participation in class, and homework. Generally, ask questions and answer them.\n20% of your grade will be determined by a 20-page term paper on when exactly “The Love Boat” jumped the proverbial shark. You will address whether this shark-jumping can be attributed to Ted McGinley, the introduction of Jill Whelan as “Vicki”, or some other cause.\n50% of your grade will be determined by a final exam."
+  },
+  {
+    "objectID": "index.html#attendance-policy",
+    "href": "index.html#attendance-policy",
+    "title": "Inferential Statistics",
+    "section": "Attendance Policy",
+    "text": "Attendance Policy\n\nShowing up is 80 percent of life – Woody Allen, via Marshall Brickman\n\nStudents should be weary of skipping class. I deduct all participation points for a class after five unexcused absences and this can have important implications for a student’s overall grade in the class."
+  },
+  {
+    "objectID": "index.html#late-arrival-of-the-professor-policy",
+    "href": "index.html#late-arrival-of-the-professor-policy",
+    "title": "Inferential Statistics",
+    "section": "Late Arrival of the Professor Policy",
+    "text": "Late Arrival of the Professor Policy\nI will inform students via e-mail/others in advance of class if class is cancelled for the day due to some unavoidable reason(s)."
+  },
+  {
+    "objectID": "index.html#e-mailsocial-media-policy",
+    "href": "index.html#e-mailsocial-media-policy",
+    "title": "Inferential Statistics",
+    "section": "E-mail/Social Media Policy",
+    "text": "E-mail/Social Media Policy\nI am usually quick to respond to student messages sent through e-mails. However, student other e-media messages are some times send messages which dont need any response from my side and they can visit me in my office hours."
+  },
+  {
+    "objectID": "index.html#make-up-exam-policy",
+    "href": "index.html#make-up-exam-policy",
+    "title": "Inferential Statistics",
+    "section": "Make-Up Exam Policy",
+    "text": "Make-Up Exam Policy\nThere are NO make-ups for missed exams. Don’t bother asking."
+  },
+  {
+    "objectID": "index.html#academic-dishonesty-policy",
+    "href": "index.html#academic-dishonesty-policy",
+    "title": "Inferential Statistics",
+    "section": "Academic Dishonesty Policy",
+    "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too."
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
+    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics."
   },
   {
     "objectID": "materials.html",
