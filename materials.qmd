@@ -4,5 +4,7 @@ title: "Course Materials"
 
 [Datasets](data/)
 
-[Slides](slides/)
+[Introduction to data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%201/chp1.pdf)
+
+[Summarising data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%202/chp2.pdf)
 
