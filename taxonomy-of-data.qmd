@@ -1,7 +1,10 @@
 ---
 title: "The Taxonomy of Data"
 author: "ZAHID ASGHAR"
-format: revealjs
+date: "today"
+format: 
+  revealjs: 
+    theme: simple
 ---
 
 # Good Morning
@@ -105,20 +108,13 @@ A categorical variable with levels that have a natural ordering.
 
 A categorical variable with levels with no ordering.
 
-------------------------------------------------------------------------
+## 
 
-class: middle, center
+[The **type** of variable informs the way it should be
+**visualized** and **analyzed**.](.adage)
 
-.adage [The **type** of variable informs the way it should be
-**visualized** and **analyzed**.]
 
-------------------------------------------------------------------------
-
-Class volunteers for noting down important questions from chat box?
-
-------------------------------------------------------------------------
-
-class: middle, center
+Class volunteers for noting down important questions from class lectures/discord?
 
 # The Data Frame
 
