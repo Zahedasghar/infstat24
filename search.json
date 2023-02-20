@@ -49,6 +49,13 @@
     "text": "Types of Variables\nNumerical:\nVariables that take numbers as values that are sensible to add, subtract, etc.\nCategorical:\nVariables that take categories as values (called levels).\nContinuous:\nA numerical variable that takes values on an interval of the real number line.\nDiscrete:\nA numerical variable that takes values that have jumps between them (i.e. an ordered countable set).\nOrdinal:\nA categorical variable with levels that have a natural ordering.\nNominal:\nA categorical variable with levels with no ordering."
   },
   {
+    "objectID": "taxonomy-of-data.html#section",
+    "href": "taxonomy-of-data.html#section",
+    "title": "The Taxonomy of Data",
+    "section": "",
+    "text": "The type of variable informs the way it should be visualized and analyzed.\nClass volunteers for noting down important questions from class lectures/discord?"
+  },
+  {
     "objectID": "taxonomy-of-data.html#observing-penguins",
     "href": "taxonomy-of-data.html#observing-penguins",
     "title": "The Taxonomy of Data",
@@ -81,7 +88,7 @@
     "href": "taxonomy-of-data.html#the-data-frame-1",
     "title": "The Taxonomy of Data",
     "section": "The Data Frame",
-    "text": "The Data Frame\n\n\n\n\n \n  \n    bill_depth_mm \n    bill_length_mm \n    species \n  \n \n\n  \n    17.1 \n    39.0 \n    Adelie \n  \n  \n    19.5 \n    50.0 \n    Chinstrap \n  \n  \n    14.4 \n    43.4 \n    Gentoo \n  \n  \n    15.5 \n    32.1 \n    Adelie \n  \n\n\n\n\n\nA data frame is an array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell storse a value observed for a variable on an observation.\nUnit of observation:\nThe type of the object on which the variables are observed.\n\nHere: an adult foraging penguin near Palmer Station, Antarctica"
+    "text": "The Data Frame\n\n\n\n\n \n  \n    bill_depth_mm \n    bill_length_mm \n    species \n  \n \n\n  \n    19.0 \n    40.6 \n    Adelie \n  \n  \n    17.4 \n    39.5 \n    Adelie \n  \n  \n    18.3 \n    42.7 \n    Adelie \n  \n  \n    18.9 \n    39.7 \n    Adelie \n  \n\n\n\n\n\nA data frame is an array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell storse a value observed for a variable on an observation.\nUnit of observation:\nThe type of the object on which the variables are observed.\n\nHere: an adult foraging penguin near Palmer Station, Antarctica"
   },
   {
     "objectID": "taxonomy-of-data.html#non-tidy-data-frames",
@@ -158,6 +165,6 @@
     "href": "materials.html",
     "title": "Course Materials",
     "section": "",
-    "text": "Datasets\nIntroduction to data\nSummarising data"
+    "text": "Datasets\nTaxonomy of data\nIntroduction to data\nInroduction to data Video\nSummarising data"
   }
 ]
