@@ -1,5 +1,110 @@
 [
   {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics."
+  },
+  {
+    "objectID": "taxonomy-of-data.html#agenda",
+    "href": "taxonomy-of-data.html#agenda",
+    "title": "The Taxonomy of Data",
+    "section": "Agenda",
+    "text": "Agenda\n\nThe Taxonomy of Data\nSampling Techniques, Response and Explanatory Variables\npollev.com/zahidasghar349\nThe Data Frame\nRStudio.cloud introduction\n\nTo learn how to critique and construct claims made using data."
+  },
+  {
+    "objectID": "taxonomy-of-data.html#data-defined",
+    "href": "taxonomy-of-data.html#data-defined",
+    "title": "The Taxonomy of Data",
+    "section": "Data defined",
+    "text": "Data defined\nData:\n\nAn item of (chiefly numerical) information, esp. one obtained by scientific work, a number of which are typically collected together for reference, analysis, or calculation.\n\n\nFrom latin datum: that which is given.\nFacts.\nVariable:\nA characteristic of an object / unit that can be measured / recorded.\n\nObservations: the collection of objects / units that are being measured / recorded."
+  },
+  {
+    "objectID": "taxonomy-of-data.html#taxonomy",
+    "href": "taxonomy-of-data.html#taxonomy",
+    "title": "The Taxonomy of Data",
+    "section": "Taxonomy",
+    "text": "Taxonomy\n\nCarl Linnaeus, Systema Naturae, 1735\n\nDraw data Taxonomy on Board"
+  },
+  {
+    "objectID": "taxonomy-of-data.html#the-taxonomy-of-data-1",
+    "href": "taxonomy-of-data.html#the-taxonomy-of-data-1",
+    "title": "The Taxonomy of Data",
+    "section": "The Taxonomy of Data",
+    "text": "The Taxonomy of Data"
+  },
+  {
+    "objectID": "taxonomy-of-data.html#types-of-variables",
+    "href": "taxonomy-of-data.html#types-of-variables",
+    "title": "The Taxonomy of Data",
+    "section": "Types of Variables",
+    "text": "Types of Variables\nNumerical:\nVariables that take numbers as values that are sensible to add, subtract, etc.\nCategorical:\nVariables that take categories as values (called levels).\nContinuous:\nA numerical variable that takes values on an interval of the real number line.\nDiscrete:\nA numerical variable that takes values that have jumps between them (i.e. an ordered countable set).\nOrdinal:\nA categorical variable with levels that have a natural ordering.\nNominal:\nA categorical variable with levels with no ordering."
+  },
+  {
+    "objectID": "taxonomy-of-data.html#observing-penguins",
+    "href": "taxonomy-of-data.html#observing-penguins",
+    "title": "The Taxonomy of Data",
+    "section": "Observing Penguins",
+    "text": "Observing Penguins"
+  },
+  {
+    "objectID": "taxonomy-of-data.html#palmer-station-antarctica",
+    "href": "taxonomy-of-data.html#palmer-station-antarctica",
+    "title": "The Taxonomy of Data",
+    "section": "Palmer Station, Antarctica",
+    "text": "Palmer Station, Antarctica\nSize measurements for adult foraging penguins near Palmer Station, Antarctica, K. Gorman 2020."
+  },
+  {
+    "objectID": "taxonomy-of-data.html#variables-beak-length-beak-depth",
+    "href": "taxonomy-of-data.html#variables-beak-length-beak-depth",
+    "title": "The Taxonomy of Data",
+    "section": "Variables: Beak Length, Beak Depth",
+    "text": "Variables: Beak Length, Beak Depth\n\n\nThese are continuous variables."
+  },
+  {
+    "objectID": "taxonomy-of-data.html#variable-species",
+    "href": "taxonomy-of-data.html#variable-species",
+    "title": "The Taxonomy of Data",
+    "section": "Variable: Species",
+    "text": "Variable: Species\n\n\nThis is a nominal variable."
+  },
+  {
+    "objectID": "taxonomy-of-data.html#the-data-frame-1",
+    "href": "taxonomy-of-data.html#the-data-frame-1",
+    "title": "The Taxonomy of Data",
+    "section": "The Data Frame",
+    "text": "The Data Frame\n\n\n\n\n \n  \n    bill_depth_mm \n    bill_length_mm \n    species \n  \n \n\n  \n    17.1 \n    39.0 \n    Adelie \n  \n  \n    19.5 \n    50.0 \n    Chinstrap \n  \n  \n    14.4 \n    43.4 \n    Gentoo \n  \n  \n    15.5 \n    32.1 \n    Adelie \n  \n\n\n\n\n\nA data frame is an array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell storse a value observed for a variable on an observation.\nUnit of observation:\nThe type of the object on which the variables are observed.\n\nHere: an adult foraging penguin near Palmer Station, Antarctica"
+  },
+  {
+    "objectID": "taxonomy-of-data.html#non-tidy-data-frames",
+    "href": "taxonomy-of-data.html#non-tidy-data-frames",
+    "title": "The Taxonomy of Data",
+    "section": "Non-tidy Data Frames",
+    "text": "Non-tidy Data Frames\nFrom Wikipedia, a contingency table of sex and handedness.\n\n.task[ What is the unit of observation?\nWhat are the variables? ]"
+  },
+  {
+    "objectID": "taxonomy-of-data.html#non-tidy-data-frames-1",
+    "href": "taxonomy-of-data.html#non-tidy-data-frames-1",
+    "title": "The Taxonomy of Data",
+    "section": "Non-tidy Data Frames",
+    "text": "Non-tidy Data Frames\nFrom the World Bank, the number of hospital beds.\n\nWhat is the unit of observation?\nWhat are the variables?"
+  },
+  {
+    "objectID": "taxonomy-of-data.html#for-next-time",
+    "href": "taxonomy-of-data.html#for-next-time",
+    "title": "The Taxonomy of Data",
+    "section": "For next time",
+    "text": "For next time\n\nRead Ch.1 from Openintro\nDownload R and RStudio\nPractice with RStudio.cloud"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Inferential Statistics",
@@ -47,20 +152,6 @@
     "title": "Inferential Statistics",
     "section": "Academic Dishonesty Policy",
     "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too."
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "schedule.html#assignments",
-    "href": "schedule.html#assignments",
-    "title": "Schedule",
-    "section": "Assignments",
-    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics."
   },
   {
     "objectID": "materials.html",

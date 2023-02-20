@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/Zahedasghar/infstat23/index.html</loc>
-    <lastmod>2023-02-14T14:33:45.161Z</lastmod>
+    <loc>https://github.com/Zahedasghar/infstat23/schedule.html</loc>
+    <lastmod>2023-02-20T01:43:33.756Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/Zahedasghar/infstat23/schedule.html</loc>
-    <lastmod>2023-02-14T14:33:46.045Z</lastmod>
+    <loc>https://github.com/Zahedasghar/infstat23/taxonomy-of-data.html</loc>
+    <lastmod>2023-02-20T01:43:35.224Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/Zahedasghar/infstat23/index.html</loc>
+    <lastmod>2023-02-20T01:43:35.940Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/Zahedasghar/infstat23/materials.html</loc>
-    <lastmod>2023-02-14T14:33:46.413Z</lastmod>
+    <lastmod>2023-02-20T01:43:36.212Z</lastmod>
   </url>
 </urlset>
