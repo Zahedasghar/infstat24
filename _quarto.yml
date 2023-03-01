@@ -3,10 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "Course Title"
+  title: "Inferential Statistics"
   sidebar:
     background: primary
-    # logo: "images/logo.png"
+    logo: "images/ggplot2.png"
     pinned: true
     align: center
     tools:
