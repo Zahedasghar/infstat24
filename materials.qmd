@@ -12,5 +12,7 @@ title: "Course Materials"
 [Inroduction to data Video](https://youtu.be/JqErvErJdmU) 
 
 [Summarising data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%202/chp2.pdf)
+
+[lab on basics of data](slides/lab1.html)
  
  
