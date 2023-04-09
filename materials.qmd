@@ -14,5 +14,10 @@ title: "Course Materials"
 [Summarising data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%202/chp2.pdf)
 
 [lab on basics of data](https://zahidasghar.com/infstat23/lab1.html)
+
+
+[Probability](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%203/chp3.pdf)
+
+[Video on Probability ](https://youtu.be/UqXVnd5FoMM)
  
  
