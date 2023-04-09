@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/Zahedasghar/infstat23/lab1.html</loc>
-    <lastmod>2023-03-01T12:56:36.209Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/Zahedasghar/infstat23/schedule.html</loc>
-    <lastmod>2023-03-01T12:56:36.869Z</lastmod>
+    <loc>https://github.com/Zahedasghar/infstat23/index.html</loc>
+    <lastmod>2023-04-09T17:05:00.075Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/Zahedasghar/infstat23/taxonomy-of-data.html</loc>
-    <lastmod>2023-03-01T12:56:39.341Z</lastmod>
+    <lastmod>2023-04-09T17:05:01.751Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/Zahedasghar/infstat23/index.html</loc>
-    <lastmod>2023-03-01T12:56:40.057Z</lastmod>
+    <loc>https://github.com/Zahedasghar/infstat23/lab1.html</loc>
+    <lastmod>2023-04-09T17:05:03.099Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/Zahedasghar/infstat23/schedule.html</loc>
+    <lastmod>2023-04-09T17:05:03.531Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/Zahedasghar/infstat23/materials.html</loc>
-    <lastmod>2023-03-01T12:56:40.345Z</lastmod>
+    <lastmod>2023-04-09T17:05:03.903Z</lastmod>
   </url>
 </urlset>
