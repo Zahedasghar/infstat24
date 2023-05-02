@@ -18,6 +18,14 @@ title: "Course Materials"
 
 [Probability](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%203/chp3.pdf)
 
-[Video on Probability ](https://youtu.be/UqXVnd5FoMM)
+[Video#1 on Probability ](https://youtu.be/UqXVnd5FoMM)
+
+[Video#2 on Probability (Random Variable)](https://youtu.be/9L4DSofEEqg)
+
+[Distributions](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%204/chp4.pdf)
+
+[Normal distribution video lecture](https://youtu.be/962bzbnC1DA)
+
+
  
  
