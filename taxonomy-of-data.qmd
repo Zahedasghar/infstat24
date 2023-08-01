@@ -5,6 +5,12 @@ date: "today"
 format: 
   revealjs: 
     theme: simple
+    chalkboard: true
+execute: 
+  freeze: auto
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 # Good Morning
@@ -21,20 +27,9 @@ library(tidyverse)
 
 # The Taxonomy of Data
 
-# Announcements
 
-1.  How to stay in the loop with this class
 
--   [discord](https://discord.gg/bSurfjW2)
--   Class
--   whatsapp group
--   send email
-
-2.  Getting Help
-
--   Send message
-
-## Agenda
+## Agenda {background-color="#806040"}
 
 1.  The Taxonomy of Data
 2.  Sampling Techniques, Response and Explanatory Variables
@@ -67,7 +62,6 @@ measured / recorded.
 ## Taxonomy
 
 ![](images/plant-taxonomy.jpeg)
-
 
 Carl Linnaeus, *Systema Naturae*, 1735
 
@@ -110,11 +104,11 @@ A categorical variable with levels with no ordering.
 
 ## 
 
-[The **type** of variable informs the way it should be
-**visualized** and **analyzed**.](.adage)
+[The **type** of variable informs the way it should be **visualized**
+and **analyzed**.](.adage)
 
-
-Class volunteers for noting down important questions from class lectures/discord?
+Class volunteers for noting down important questions from class
+lectures/discord?
 
 # The Data Frame
 
@@ -168,26 +162,35 @@ From Wikipedia, a *contingency table* of sex and handedness.
 
 ![](images/non-tidy-contingency-table.png)
 
-.task\[ What is the unit of observation?
+.task[ What is the unit of observation?
 
-What are the variables? \]
+What are the variables? ]
 
-## Non-tidy Data Frames
+## Non-tidy Data Frames {background-color="aquamarine"}
 
 From the World Bank, the number of hospital beds.
 
 ![](images/non-tidy-world-bank.png)
 
- What is the unit of observation?
+What is the unit of observation?
 
 What are the variables?
 
-## For next time
+##  {background-color="aquamarine"}
 
 
-1.  Read Ch.1 from Openintro
+::: columns
+::: {.column width="30%"}
+-   Data are ubiquitous and precious than oil
 
-2.  Download R and RStudio
+-   Challenge is to make sense for insightful action
 
-3.  Practice with RStudio.cloud 
+-   Not something to learn about but do about
+:::
 
+::: {.column width="70%"}
+<iframe src="https://giphy.com/embed/Of40xPqggQrde" width="480" height="315" frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+:::
+:::
