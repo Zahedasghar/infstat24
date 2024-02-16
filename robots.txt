@@ -1,1 +1,1 @@
-Sitemap: https://github.com/Zahedasghar/infstat23/sitemap.xml
+Sitemap: https://Zahedasghar.github.io/infstat23/sitemap.xml

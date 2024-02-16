@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -79,7 +79,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -88,6 +94,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -103,12 +110,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab on data analytics with pakwheels data</li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab on data analytics with pakwheels data</li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -118,13 +125,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/ggplot2.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
-    <a href="https://github.com/Zahedasghar" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/Zahedasghar" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -161,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -218,7 +225,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
@@ -267,22 +276,22 @@ Attaching package: 'janitor'</code></pre>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>pakwheels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 56,186 × 16
-     ad_no name    price model…¹ locat…² mileage regis…³ engin…⁴ engin…⁵ trans…⁶
-     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;  
- 1 4096758 Toyota… 2385…    2017 G- 8, …    9869 Un-Reg… Petrol  1000 cc Automa…
- 2 4168305 Toyota… 1110…    2019 Peshaw…   11111 Islama… Petrol  1300 cc Automa…
- 3 4168298 Suzuki… 1530…    2019 Akora …   17500 Un-Reg… Petrol  660 cc  Automa…
- 4 4168307 Suzuki… 1650…    2019 Abdull…    9600 Lahore  Petrol  660 cc  Manual 
- 5 4168306 Toyota… 1435…    2010 9th Av…  120000 Islama… Petrol  1300 cc Manual 
- 6 4168303 Honda … 3850…    2017 Peshaw…   22000 Islama… Petrol  1500 cc Automa…
- 7 4168304 Suzuki… 1440…    2017 Gulber…   31000 Lahore  Petrol  1000 cc Manual 
- 8 4168309 Mitsub… 1425…    2012 Askari…  101000 Lahore  Petrol  1000 cc Automa…
- 9 4168310 Toyota… 2650…    1998 Sargod…  110000 Rawalp… Diesel  3000 cc Automa…
-10 4168311 Honda … 3350…    2017 Air Av…   60000 Lahore  Petrol  1800 cc Automa…
-# … with 56,176 more rows, 6 more variables: color &lt;chr&gt;, assembly &lt;chr&gt;,
-#   body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;, url &lt;chr&gt;, and
-#   abbreviated variable names ¹​model_year, ²​location, ³​registered_city,
-#   ⁴​engine_type, ⁵​engine_capacity, ⁶​transmission</code></pre>
+     ad_no name    price model_year location mileage registered_city engine_type
+     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;      
+ 1 4096758 Toyota… 2385…       2017 G- 8, I…    9869 Un-Registered   Petrol     
+ 2 4168305 Toyota… 1110…       2019 Peshawa…   11111 Islamabad       Petrol     
+ 3 4168298 Suzuki… 1530…       2019 Akora K…   17500 Un-Registered   Petrol     
+ 4 4168307 Suzuki… 1650…       2019 Abdulla…    9600 Lahore          Petrol     
+ 5 4168306 Toyota… 1435…       2010 9th Ave…  120000 Islamabad       Petrol     
+ 6 4168303 Honda … 3850…       2017 Peshawa…   22000 Islamabad       Petrol     
+ 7 4168304 Suzuki… 1440…       2017 Gulberg…   31000 Lahore          Petrol     
+ 8 4168309 Mitsub… 1425…       2012 Askari-…  101000 Lahore          Petrol     
+ 9 4168310 Toyota… 2650…       1998 Sargodh…  110000 Rawalpindi      Diesel     
+10 4168311 Honda … 3350…       2017 Air Ave…   60000 Lahore          Petrol     
+# ℹ 56,176 more rows
+# ℹ 8 more variables: engine_capacity &lt;chr&gt;, transmission &lt;chr&gt;, color &lt;chr&gt;,
+#   assembly &lt;chr&gt;, body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;,
+#   url &lt;chr&gt;</code></pre>
 </div>
 </div>
 <p>This returns the names of the variables in this data frame. The <strong>codebook</strong> (description of the variables) is included below.</p>
@@ -414,22 +423,22 @@ $ company         &lt;chr&gt; "Toyota", "Toyota", "Suzuki", "Suzuki", "Toyota", 
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(company<span class="sc">==</span><span class="st">"Toyota"</span>, hp<span class="sc">&gt;</span><span class="dv">999</span> <span class="sc">&amp;</span>hp<span class="sc">&lt;</span><span class="dv">1300</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2,579 × 18
-     ad_no name    price model…¹ locat…² mileage regis…³ engin…⁴ engin…⁵ trans…⁶
-     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;  
- 1 4096758 Toyot… 2.38e6    2017 G- 8, …    9869 Un-Reg… Petrol  1000 cc Automa…
- 2 4099087 Toyot… 9.65e5    2001 Johar …  135000 Karachi Petrol  1000 cc Automa…
- 3 4168130 Toyot… 2.35e6    2017 Lahore…   35000 Un-Reg… Petrol  1000 cc Automa…
- 4 4168233 Toyot… 1.65e6    2014 Bahadu…   80000 Karachi Petrol  1000 cc Automa…
- 5 4168247 Toyot… 1.27e6    2006 Gulsha…  105000 Karachi Petrol  1000 cc Automa…
- 6 4167547 Toyot… 1.25e6    2007 I- 8, …  177000 Islama… Petrol  1000 cc Automa…
- 7 4153127 Toyot… 2.48e6    2017 Pak Ar…   66198 Un-Reg… Petrol  1000 cc Automa…
- 8 4160338 Toyot… 2.05e6    2016 Pak Ar…   16667 Un-Reg… Petrol  1000 cc Automa…
- 9 4163093 Toyot… 2.30e6    2016 Pak Ar…   53122 Un-Reg… Petrol  1000 cc Automa…
-10 4089955 Toyot… 2.28e6    2016 Pak Ar…   75546 Un-Reg… Petrol  1000 cc Automa…
-# … with 2,569 more rows, 8 more variables: color &lt;chr&gt;, assembly &lt;chr&gt;,
-#   body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;, url &lt;chr&gt;, hp &lt;dbl&gt;,
-#   company &lt;chr&gt;, and abbreviated variable names ¹​model_year, ²​location,
-#   ³​registered_city, ⁴​engine_type, ⁵​engine_capacity, ⁶​transmission</code></pre>
+     ad_no name    price model_year location mileage registered_city engine_type
+     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;      
+ 1 4096758 Toyot… 2.39e6       2017 G- 8, I…    9869 Un-Registered   Petrol     
+ 2 4099087 Toyot… 9.65e5       2001 Johar T…  135000 Karachi         Petrol     
+ 3 4168130 Toyot… 2.35e6       2017 Lahore …   35000 Un-Registered   Petrol     
+ 4 4168233 Toyot… 1.65e6       2014 Bahadur…   80000 Karachi         Petrol     
+ 5 4168247 Toyot… 1.28e6       2006 Gulshan…  105000 Karachi         Petrol     
+ 6 4167547 Toyot… 1.25e6       2007 I- 8, I…  177000 Islamabad       Petrol     
+ 7 4153127 Toyot… 2.47e6       2017 Pak Ara…   66198 Un-Registered   Petrol     
+ 8 4160338 Toyot… 2.05e6       2016 Pak Ara…   16667 Un-Registered   Petrol     
+ 9 4163093 Toyot… 2.29e6       2016 Pak Ara…   53122 Un-Registered   Petrol     
+10 4089955 Toyot… 2.28e6       2016 Pak Ara…   75546 Un-Registered   Petrol     
+# ℹ 2,569 more rows
+# ℹ 10 more variables: engine_capacity &lt;chr&gt;, transmission &lt;chr&gt;, color &lt;chr&gt;,
+#   assembly &lt;chr&gt;, body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;,
+#   url &lt;chr&gt;, hp &lt;dbl&gt;, company &lt;chr&gt;</code></pre>
 </div>
 </div>
 </section>
@@ -558,10 +567,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -571,8 +579,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -585,6 +602,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -628,6 +764,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -653,6 +790,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -713,6 +876,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "schedule.html#weekly-schedule",
-    "href": "schedule.html#weekly-schedule",
-    "title": "Schedule",
-    "section": "",
-    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "schedule.html#assignments",
-    "href": "schedule.html#assignments",
-    "title": "Schedule",
-    "section": "Assignments",
-    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics."
-  },
-  {
     "objectID": "lab1.html",
     "href": "lab1.html",
     "title": "Lab on data analytics with pakwheels data",
@@ -39,14 +18,94 @@
     "href": "lab1.html#getting-started",
     "title": "Lab on data analytics with pakwheels data",
     "section": "Getting started",
-    "text": "Getting started\n\nLoad packages\nIn this lab we will explore the data using the dplyr package and visualize it using the ggplot2 package for data visualization. Or other way round is to use tidyverse package which contains many useful packages in itself. Let’s load the packages.\n\nlibrary(statsr)\nlibrary(dplyr)\nlibrary(ggplot2)\n\n\n\nData\nThe Pakwheels data scrapped from website we will be working with in this lab. Data can be downloaded. This is R data which you can directly read in R.\nWe begin by loading the pakwheels data frame. Type the following in your console to load the data:\n\npakwheels &lt;- readRDS(\"D:/RepTemplates/infstat23/slides/pakwheels.rds\")\n\nThe data frame containing 56186 cars that shows up in your workspace is a data matrix, with each row representing an observation and each column representing a variable. R calls this data format a data frame, which is a term that will be used throughout the labs.\nTo view the names of the variables, type the command and clean_names using janitor package.\n\nnames(pakwheels)\n\n [1] \"Ad No\"           \"Name\"            \"Price\"           \"Model Year\"     \n [5] \"Location\"        \"Mileage\"         \"Registered City\" \"Engine Type\"    \n [9] \"Engine Capacity\" \"Transmission\"    \"Color\"           \"Assembly\"       \n[13] \"Body Type\"       \"Features\"        \"Last Updated\"    \"URL\"            \n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\npakwheels &lt;- pakwheels |&gt; clean_names()\n\npakwheels\n\n# A tibble: 56,186 × 16\n     ad_no name    price model…¹ locat…² mileage regis…³ engin…⁴ engin…⁵ trans…⁶\n     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;  \n 1 4096758 Toyota… 2385…    2017 G- 8, …    9869 Un-Reg… Petrol  1000 cc Automa…\n 2 4168305 Toyota… 1110…    2019 Peshaw…   11111 Islama… Petrol  1300 cc Automa…\n 3 4168298 Suzuki… 1530…    2019 Akora …   17500 Un-Reg… Petrol  660 cc  Automa…\n 4 4168307 Suzuki… 1650…    2019 Abdull…    9600 Lahore  Petrol  660 cc  Manual \n 5 4168306 Toyota… 1435…    2010 9th Av…  120000 Islama… Petrol  1300 cc Manual \n 6 4168303 Honda … 3850…    2017 Peshaw…   22000 Islama… Petrol  1500 cc Automa…\n 7 4168304 Suzuki… 1440…    2017 Gulber…   31000 Lahore  Petrol  1000 cc Manual \n 8 4168309 Mitsub… 1425…    2012 Askari…  101000 Lahore  Petrol  1000 cc Automa…\n 9 4168310 Toyota… 2650…    1998 Sargod…  110000 Rawalp… Diesel  3000 cc Automa…\n10 4168311 Honda … 3350…    2017 Air Av…   60000 Lahore  Petrol  1800 cc Automa…\n# … with 56,176 more rows, 6 more variables: color &lt;chr&gt;, assembly &lt;chr&gt;,\n#   body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;, url &lt;chr&gt;, and\n#   abbreviated variable names ¹​model_year, ²​location, ³​registered_city,\n#   ⁴​engine_type, ⁵​engine_capacity, ⁶​transmission\n\n\nThis returns the names of the variables in this data frame. The codebook (description of the variables) is included below.\n\nad_no, : Advertisement Number\nname : Name of a company\nprice: Price in PKR\nmodel_year: Model year\nlocation: Location of a car\nmileage: Number of KM car has driven\nregistration_city: City of registration\nengine_type: Petrol or Diesel or other\nengine_capacity: How many cc engine\ntransmission: Manual or Automatic\ncolor: color of a car\nassembly: Imported or local\nbody_type: Type of body (Sedan/SUV/…)\nfeatures: Features\nlast_updated: Date of last update\nurl: URL\n\nA very useful function for taking a quick peek at your data frame, and viewing its dimensions and data types is glimpse\n\nglimpse(pakwheels)\n\nRows: 56,186\nColumns: 16\n$ ad_no           &lt;dbl&gt; 4096758, 4168305, 4168298, 4168307, 4168306, 4168303, …\n$ name            &lt;chr&gt; \"Toyota Vitz F 1.0 2017\", \"Toyota Corolla GLi Automati…\n$ price           &lt;chr&gt; \"2385000.0\", \"111000.00000000001\", \"1530000.0\", \"16500…\n$ model_year      &lt;dbl&gt; 2017, 2019, 2019, 2019, 2010, 2017, 2017, 2012, 1998, …\n$ location        &lt;chr&gt; \"G- 8, Islamabad Islamabad\", \"Peshawar KPK\", \"Akora Kh…\n$ mileage         &lt;dbl&gt; 9869, 11111, 17500, 9600, 120000, 22000, 31000, 101000…\n$ registered_city &lt;chr&gt; \"Un-Registered\", \"Islamabad\", \"Un-Registered\", \"Lahore…\n$ engine_type     &lt;chr&gt; \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Pet…\n$ engine_capacity &lt;chr&gt; \"1000 cc\", \"1300 cc\", \"660 cc\", \"660 cc\", \"1300 cc\", \"…\n$ transmission    &lt;chr&gt; \"Automatic\", \"Automatic\", \"Automatic\", \"Manual\", \"Manu…\n$ color           &lt;chr&gt; \"Silver\", \"White\", \"White\", \"White\", \"Black\", \"Black\",…\n$ assembly        &lt;chr&gt; \"Imported\", \"Local\", \"Local\", \"Local\", \"Local\", \"Local…\n$ body_type       &lt;chr&gt; \"Hatchback\", \"Sedan\", \"Hatchback\", \"Hatchback\", \"Sedan…\n$ features        &lt;chr&gt; \"ABS, AM/FM Radio, Air Bags, Air Conditioning, CD Play…\n$ last_updated    &lt;chr&gt; \"Jul 11, 2020\", \"Jul 12, 2020\", \"Jul 12, 2020\", \"Jul 1…\n$ url             &lt;chr&gt; \"https://www.pakwheels.com/used-cars/toyota-vitz-2017-…\n\n\nThe pakwheels data frame has lot of information. But let us have little cleaning as price is numeric variable but her its a character, url is not of any usage for us in this data so can be dropped and similar we need company names (first word from variable name).\n\n\nWarning: NAs introduced by coercion\n\n\n\nglimpse(pakwheels)\n\nRows: 56,186\nColumns: 18\n$ ad_no           &lt;dbl&gt; 4096758, 4168305, 4168298, 4168307, 4168306, 4168303, …\n$ name            &lt;chr&gt; \"Toyota Vitz F 1.0 2017\", \"Toyota Corolla GLi Automati…\n$ price           &lt;dbl&gt; 2385000, 111000, 1530000, 1650000, 1435000, 3850000, 1…\n$ model_year      &lt;dbl&gt; 2017, 2019, 2019, 2019, 2010, 2017, 2017, 2012, 1998, …\n$ location        &lt;chr&gt; \"G- 8, Islamabad Islamabad\", \"Peshawar KPK\", \"Akora Kh…\n$ mileage         &lt;dbl&gt; 9869, 11111, 17500, 9600, 120000, 22000, 31000, 101000…\n$ registered_city &lt;chr&gt; \"Un-Registered\", \"Islamabad\", \"Un-Registered\", \"Lahore…\n$ engine_type     &lt;chr&gt; \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Pet…\n$ engine_capacity &lt;chr&gt; \"1000 cc\", \"1300 cc\", \"660 cc\", \"660 cc\", \"1300 cc\", \"…\n$ transmission    &lt;chr&gt; \"Automatic\", \"Automatic\", \"Automatic\", \"Manual\", \"Manu…\n$ color           &lt;chr&gt; \"Silver\", \"White\", \"White\", \"White\", \"Black\", \"Black\",…\n$ assembly        &lt;chr&gt; \"Imported\", \"Local\", \"Local\", \"Local\", \"Local\", \"Local…\n$ body_type       &lt;chr&gt; \"Hatchback\", \"Sedan\", \"Hatchback\", \"Hatchback\", \"Sedan…\n$ features        &lt;chr&gt; \"ABS, AM/FM Radio, Air Bags, Air Conditioning, CD Play…\n$ last_updated    &lt;chr&gt; \"Jul 11, 2020\", \"Jul 12, 2020\", \"Jul 12, 2020\", \"Jul 1…\n$ url             &lt;chr&gt; \"https://www.pakwheels.com/used-cars/toyota-vitz-2017-…\n$ hp              &lt;dbl&gt; 1000, 1300, 660, 660, 1300, 1500, 1000, 1000, 3000, 18…\n$ company         &lt;chr&gt; \"Toyota\", \"Toyota\", \"Suzuki\", \"Suzuki\", \"Toyota\", \"Hon…\n\n\nLet’s think about some questions we might want to answer with these data:\n\nCan we answer a question: what is the best car? No we cant answer this question\nBut we can answer which car is used the most. So find which car is sold the most.\nOr we might want to determine which of the three major companies has maximum cars.\n\n\n\nSeven verbs\nThe dplyr package offers seven verbs (functions) for basic data manipulation:\n\nfilter()\narrange()\nselect()\ndistinct()\nmutate()\nsummarise()\nsample_n()\n\nWe will use some of these functions in this lab, and learn about others in a future lab."
+    "text": "Getting started\n\nLoad packages\nIn this lab we will explore the data using the dplyr package and visualize it using the ggplot2 package for data visualization. Or other way round is to use tidyverse package which contains many useful packages in itself. Let’s load the packages.\n\nlibrary(statsr)\nlibrary(dplyr)\nlibrary(ggplot2)\n\n\n\nData\nThe Pakwheels data scrapped from website we will be working with in this lab. Data can be downloaded. This is R data which you can directly read in R.\nWe begin by loading the pakwheels data frame. Type the following in your console to load the data:\n\npakwheels &lt;- readRDS(\"D:/RepTemplates/infstat23/slides/pakwheels.rds\")\n\nThe data frame containing 56186 cars that shows up in your workspace is a data matrix, with each row representing an observation and each column representing a variable. R calls this data format a data frame, which is a term that will be used throughout the labs.\nTo view the names of the variables, type the command and clean_names using janitor package.\n\nnames(pakwheels)\n\n [1] \"Ad No\"           \"Name\"            \"Price\"           \"Model Year\"     \n [5] \"Location\"        \"Mileage\"         \"Registered City\" \"Engine Type\"    \n [9] \"Engine Capacity\" \"Transmission\"    \"Color\"           \"Assembly\"       \n[13] \"Body Type\"       \"Features\"        \"Last Updated\"    \"URL\"            \n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\npakwheels &lt;- pakwheels |&gt; clean_names()\n\npakwheels\n\n# A tibble: 56,186 × 16\n     ad_no name    price model_year location mileage registered_city engine_type\n     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;      \n 1 4096758 Toyota… 2385…       2017 G- 8, I…    9869 Un-Registered   Petrol     \n 2 4168305 Toyota… 1110…       2019 Peshawa…   11111 Islamabad       Petrol     \n 3 4168298 Suzuki… 1530…       2019 Akora K…   17500 Un-Registered   Petrol     \n 4 4168307 Suzuki… 1650…       2019 Abdulla…    9600 Lahore          Petrol     \n 5 4168306 Toyota… 1435…       2010 9th Ave…  120000 Islamabad       Petrol     \n 6 4168303 Honda … 3850…       2017 Peshawa…   22000 Islamabad       Petrol     \n 7 4168304 Suzuki… 1440…       2017 Gulberg…   31000 Lahore          Petrol     \n 8 4168309 Mitsub… 1425…       2012 Askari-…  101000 Lahore          Petrol     \n 9 4168310 Toyota… 2650…       1998 Sargodh…  110000 Rawalpindi      Diesel     \n10 4168311 Honda … 3350…       2017 Air Ave…   60000 Lahore          Petrol     \n# ℹ 56,176 more rows\n# ℹ 8 more variables: engine_capacity &lt;chr&gt;, transmission &lt;chr&gt;, color &lt;chr&gt;,\n#   assembly &lt;chr&gt;, body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;,\n#   url &lt;chr&gt;\n\n\nThis returns the names of the variables in this data frame. The codebook (description of the variables) is included below.\n\nad_no, : Advertisement Number\nname : Name of a company\nprice: Price in PKR\nmodel_year: Model year\nlocation: Location of a car\nmileage: Number of KM car has driven\nregistration_city: City of registration\nengine_type: Petrol or Diesel or other\nengine_capacity: How many cc engine\ntransmission: Manual or Automatic\ncolor: color of a car\nassembly: Imported or local\nbody_type: Type of body (Sedan/SUV/…)\nfeatures: Features\nlast_updated: Date of last update\nurl: URL\n\nA very useful function for taking a quick peek at your data frame, and viewing its dimensions and data types is glimpse\n\nglimpse(pakwheels)\n\nRows: 56,186\nColumns: 16\n$ ad_no           &lt;dbl&gt; 4096758, 4168305, 4168298, 4168307, 4168306, 4168303, …\n$ name            &lt;chr&gt; \"Toyota Vitz F 1.0 2017\", \"Toyota Corolla GLi Automati…\n$ price           &lt;chr&gt; \"2385000.0\", \"111000.00000000001\", \"1530000.0\", \"16500…\n$ model_year      &lt;dbl&gt; 2017, 2019, 2019, 2019, 2010, 2017, 2017, 2012, 1998, …\n$ location        &lt;chr&gt; \"G- 8, Islamabad Islamabad\", \"Peshawar KPK\", \"Akora Kh…\n$ mileage         &lt;dbl&gt; 9869, 11111, 17500, 9600, 120000, 22000, 31000, 101000…\n$ registered_city &lt;chr&gt; \"Un-Registered\", \"Islamabad\", \"Un-Registered\", \"Lahore…\n$ engine_type     &lt;chr&gt; \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Pet…\n$ engine_capacity &lt;chr&gt; \"1000 cc\", \"1300 cc\", \"660 cc\", \"660 cc\", \"1300 cc\", \"…\n$ transmission    &lt;chr&gt; \"Automatic\", \"Automatic\", \"Automatic\", \"Manual\", \"Manu…\n$ color           &lt;chr&gt; \"Silver\", \"White\", \"White\", \"White\", \"Black\", \"Black\",…\n$ assembly        &lt;chr&gt; \"Imported\", \"Local\", \"Local\", \"Local\", \"Local\", \"Local…\n$ body_type       &lt;chr&gt; \"Hatchback\", \"Sedan\", \"Hatchback\", \"Hatchback\", \"Sedan…\n$ features        &lt;chr&gt; \"ABS, AM/FM Radio, Air Bags, Air Conditioning, CD Play…\n$ last_updated    &lt;chr&gt; \"Jul 11, 2020\", \"Jul 12, 2020\", \"Jul 12, 2020\", \"Jul 1…\n$ url             &lt;chr&gt; \"https://www.pakwheels.com/used-cars/toyota-vitz-2017-…\n\n\nThe pakwheels data frame has lot of information. But let us have little cleaning as price is numeric variable but her its a character, url is not of any usage for us in this data so can be dropped and similar we need company names (first word from variable name).\n\n\nWarning: NAs introduced by coercion\n\n\n\nglimpse(pakwheels)\n\nRows: 56,186\nColumns: 18\n$ ad_no           &lt;dbl&gt; 4096758, 4168305, 4168298, 4168307, 4168306, 4168303, …\n$ name            &lt;chr&gt; \"Toyota Vitz F 1.0 2017\", \"Toyota Corolla GLi Automati…\n$ price           &lt;dbl&gt; 2385000, 111000, 1530000, 1650000, 1435000, 3850000, 1…\n$ model_year      &lt;dbl&gt; 2017, 2019, 2019, 2019, 2010, 2017, 2017, 2012, 1998, …\n$ location        &lt;chr&gt; \"G- 8, Islamabad Islamabad\", \"Peshawar KPK\", \"Akora Kh…\n$ mileage         &lt;dbl&gt; 9869, 11111, 17500, 9600, 120000, 22000, 31000, 101000…\n$ registered_city &lt;chr&gt; \"Un-Registered\", \"Islamabad\", \"Un-Registered\", \"Lahore…\n$ engine_type     &lt;chr&gt; \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Petrol\", \"Pet…\n$ engine_capacity &lt;chr&gt; \"1000 cc\", \"1300 cc\", \"660 cc\", \"660 cc\", \"1300 cc\", \"…\n$ transmission    &lt;chr&gt; \"Automatic\", \"Automatic\", \"Automatic\", \"Manual\", \"Manu…\n$ color           &lt;chr&gt; \"Silver\", \"White\", \"White\", \"White\", \"Black\", \"Black\",…\n$ assembly        &lt;chr&gt; \"Imported\", \"Local\", \"Local\", \"Local\", \"Local\", \"Local…\n$ body_type       &lt;chr&gt; \"Hatchback\", \"Sedan\", \"Hatchback\", \"Hatchback\", \"Sedan…\n$ features        &lt;chr&gt; \"ABS, AM/FM Radio, Air Bags, Air Conditioning, CD Play…\n$ last_updated    &lt;chr&gt; \"Jul 11, 2020\", \"Jul 12, 2020\", \"Jul 12, 2020\", \"Jul 1…\n$ url             &lt;chr&gt; \"https://www.pakwheels.com/used-cars/toyota-vitz-2017-…\n$ hp              &lt;dbl&gt; 1000, 1300, 660, 660, 1300, 1500, 1000, 1000, 3000, 18…\n$ company         &lt;chr&gt; \"Toyota\", \"Toyota\", \"Suzuki\", \"Suzuki\", \"Toyota\", \"Hon…\n\n\nLet’s think about some questions we might want to answer with these data:\n\nCan we answer a question: what is the best car? No we cant answer this question\nBut we can answer which car is used the most. So find which car is sold the most.\nOr we might want to determine which of the three major companies has maximum cars.\n\n\n\nSeven verbs\nThe dplyr package offers seven verbs (functions) for basic data manipulation:\n\nfilter()\narrange()\nselect()\ndistinct()\nmutate()\nsummarise()\nsample_n()\n\nWe will use some of these functions in this lab, and learn about others in a future lab."
   },
   {
     "objectID": "lab1.html#analysis",
     "href": "lab1.html#analysis",
     "title": "Lab on data analytics with pakwheels data",
     "section": "Analysis",
-    "text": "Analysis\n\nQuestion 1\nHow many observations are left in the data after droping missing observations from data?\n\n\nQuestion 2\n\nTake the pakwheels data frame, drop missing observations and use filter for cars manufactured by Suzuki company and save as a new frame called suzuki_cars.\n\n\n\nQuestion 3\nCalculate mean and standard deviation of price of Suzuki company vehicles.\nNote that in the summarise function we created a list of two elements. The names of these elements are user defined, like mean_dd, sd_dd, n, and you could customize these names as you like (just don’t use spaces in your names). Calculating these summary statistics also require that you know the function calls. Note that n() reports the sample size.\nSummary statistics:  Some useful function calls for summary statistics for a single numerical variable are as follows:\n\nmean\nmedian\nsd\nvar\nIQR\nrange\nmin\nmax\n\nWe can also filter based on multiple criteria. Suppose we are interested in cars headed to by Toyota and are between 1000 and 1300 cc engine_capacity, save it as toyota_cars_small.\n\npakwheels |&gt; na.omit() |&gt; \n  filter(company==\"Toyota\", hp&gt;999 &hp&lt;1300)\n\n# A tibble: 2,579 × 18\n     ad_no name    price model…¹ locat…² mileage regis…³ engin…⁴ engin…⁵ trans…⁶\n     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;  \n 1 4096758 Toyot… 2.38e6    2017 G- 8, …    9869 Un-Reg… Petrol  1000 cc Automa…\n 2 4099087 Toyot… 9.65e5    2001 Johar …  135000 Karachi Petrol  1000 cc Automa…\n 3 4168130 Toyot… 2.35e6    2017 Lahore…   35000 Un-Reg… Petrol  1000 cc Automa…\n 4 4168233 Toyot… 1.65e6    2014 Bahadu…   80000 Karachi Petrol  1000 cc Automa…\n 5 4168247 Toyot… 1.27e6    2006 Gulsha…  105000 Karachi Petrol  1000 cc Automa…\n 6 4167547 Toyot… 1.25e6    2007 I- 8, …  177000 Islama… Petrol  1000 cc Automa…\n 7 4153127 Toyot… 2.48e6    2017 Pak Ar…   66198 Un-Reg… Petrol  1000 cc Automa…\n 8 4160338 Toyot… 2.05e6    2016 Pak Ar…   16667 Un-Reg… Petrol  1000 cc Automa…\n 9 4163093 Toyot… 2.30e6    2016 Pak Ar…   53122 Un-Reg… Petrol  1000 cc Automa…\n10 4089955 Toyot… 2.28e6    2016 Pak Ar…   75546 Un-Reg… Petrol  1000 cc Automa…\n# … with 2,569 more rows, 8 more variables: color &lt;chr&gt;, assembly &lt;chr&gt;,\n#   body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;, url &lt;chr&gt;, hp &lt;dbl&gt;,\n#   company &lt;chr&gt;, and abbreviated variable names ¹​model_year, ²​location,\n#   ³​registered_city, ⁴​engine_type, ⁵​engine_capacity, ⁶​transmission\n\n\n\n\nQuestion 4\nHow many cars of white color having engine_capacity between 1000 and 1300 cc.\n\n\nQuestion 5\nCalculate mean, median, sd, min, max and IQR from toyota_car_small using summarise function.\n\n\nQuestion 6\nRepeat question 5 for all cars having engine capacity between 1200 and 1300 cc.\n\n\nQuestion 7\nHow many total vehicles by each company.\n\n\nQuestion 8\nCalculate a new variable price_mill using mutate in pakwheels data frame.\n\n\nQuestion 9\nHow many cars are under 1800 and above 1800 are unregistered, respectively? What proportion of cars under 1800 cc and above 1800 cc are unregistered ?\n\n\nQuestion 10\nWhat proporiton of cars manufactured locally and imported unregistered?\n\n\nQuestion 11\nWhat is the most old car displayed for sale i-e model_year and also count cars by model_year.\n\n\nQuestion 12\nUse arrange and list number of cars by color in ascedning and descending order. Which color car is sold the most, second most and third most.\n\n\nQuestion 13\nWhich company car having engine_capacity 1300 cc costs the most.\nHow many cars with model_year 2017 with 1300 cc engine capacity are listed for sale?"
+    "text": "Analysis\n\nQuestion 1\nHow many observations are left in the data after droping missing observations from data?\n\n\nQuestion 2\n\nTake the pakwheels data frame, drop missing observations and use filter for cars manufactured by Suzuki company and save as a new frame called suzuki_cars.\n\n\n\nQuestion 3\nCalculate mean and standard deviation of price of Suzuki company vehicles.\nNote that in the summarise function we created a list of two elements. The names of these elements are user defined, like mean_dd, sd_dd, n, and you could customize these names as you like (just don’t use spaces in your names). Calculating these summary statistics also require that you know the function calls. Note that n() reports the sample size.\nSummary statistics:  Some useful function calls for summary statistics for a single numerical variable are as follows:\n\nmean\nmedian\nsd\nvar\nIQR\nrange\nmin\nmax\n\nWe can also filter based on multiple criteria. Suppose we are interested in cars headed to by Toyota and are between 1000 and 1300 cc engine_capacity, save it as toyota_cars_small.\n\npakwheels |&gt; na.omit() |&gt; \n  filter(company==\"Toyota\", hp&gt;999 &hp&lt;1300)\n\n# A tibble: 2,579 × 18\n     ad_no name    price model_year location mileage registered_city engine_type\n     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;      \n 1 4096758 Toyot… 2.39e6       2017 G- 8, I…    9869 Un-Registered   Petrol     \n 2 4099087 Toyot… 9.65e5       2001 Johar T…  135000 Karachi         Petrol     \n 3 4168130 Toyot… 2.35e6       2017 Lahore …   35000 Un-Registered   Petrol     \n 4 4168233 Toyot… 1.65e6       2014 Bahadur…   80000 Karachi         Petrol     \n 5 4168247 Toyot… 1.28e6       2006 Gulshan…  105000 Karachi         Petrol     \n 6 4167547 Toyot… 1.25e6       2007 I- 8, I…  177000 Islamabad       Petrol     \n 7 4153127 Toyot… 2.47e6       2017 Pak Ara…   66198 Un-Registered   Petrol     \n 8 4160338 Toyot… 2.05e6       2016 Pak Ara…   16667 Un-Registered   Petrol     \n 9 4163093 Toyot… 2.29e6       2016 Pak Ara…   53122 Un-Registered   Petrol     \n10 4089955 Toyot… 2.28e6       2016 Pak Ara…   75546 Un-Registered   Petrol     \n# ℹ 2,569 more rows\n# ℹ 10 more variables: engine_capacity &lt;chr&gt;, transmission &lt;chr&gt;, color &lt;chr&gt;,\n#   assembly &lt;chr&gt;, body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;,\n#   url &lt;chr&gt;, hp &lt;dbl&gt;, company &lt;chr&gt;\n\n\n\n\nQuestion 4\nHow many cars of white color having engine_capacity between 1000 and 1300 cc.\n\n\nQuestion 5\nCalculate mean, median, sd, min, max and IQR from toyota_car_small using summarise function.\n\n\nQuestion 6\nRepeat question 5 for all cars having engine capacity between 1200 and 1300 cc.\n\n\nQuestion 7\nHow many total vehicles by each company.\n\n\nQuestion 8\nCalculate a new variable price_mill using mutate in pakwheels data frame.\n\n\nQuestion 9\nHow many cars are under 1800 and above 1800 are unregistered, respectively? What proportion of cars under 1800 cc and above 1800 cc are unregistered ?\n\n\nQuestion 10\nWhat proporiton of cars manufactured locally and imported unregistered?\n\n\nQuestion 11\nWhat is the most old car displayed for sale i-e model_year and also count cars by model_year.\n\n\nQuestion 12\nUse arrange and list number of cars by color in ascedning and descending order. Which color car is sold the most, second most and third most.\n\n\nQuestion 13\nWhich company car having engine_capacity 1300 cc costs the most.\nHow many cars with model_year 2017 with 1300 cc engine capacity are listed for sale?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inferential Statistics",
+    "section": "",
+    "text": "In this course, you’ll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students are required to finish computer-based assignments. I wish that you learn stuff in this class in a way learning is fixed and timing will be a variable but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not be able to learn well and perform good in the course.\nPre-requisite: Basic Statistics or special approval needed\n\n\nAt the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Inferential Statistics",
+    "section": "",
+    "text": "At the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#grading-policy",
+    "href": "index.html#grading-policy",
+    "title": "Inferential Statistics",
+    "section": "Grading Policy",
+    "text": "Grading Policy\n\n25% of your grade will be determined by a midterm exam.\n10% of your grade will be determined by Quiz in class.\n15% of your grade will be determined by your attendance and participation in class, and homework. Generally, ask questions and answer them.\n20% of your grade will be determined by a 20-page term paper on when exactly “The Love Boat” jumped the proverbial shark. You will address whether this shark-jumping can be attributed to Ted McGinley, the introduction of Jill Whelan as “Vicki”, or some other cause.\n50% of your grade will be determined by a final exam.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#attendance-policy",
+    "href": "index.html#attendance-policy",
+    "title": "Inferential Statistics",
+    "section": "Attendance Policy",
+    "text": "Attendance Policy\n\nShowing up is 80 percent of life – Woody Allen, via Marshall Brickman\n\nStudents should be weary of skipping class. I deduct all participation points for a class after five unexcused absences and this can have important implications for a student’s overall grade in the class.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#late-arrival-of-the-professor-policy",
+    "href": "index.html#late-arrival-of-the-professor-policy",
+    "title": "Inferential Statistics",
+    "section": "Late Arrival of the Professor Policy",
+    "text": "Late Arrival of the Professor Policy\nI will inform students via e-mail/others in advance of class if class is cancelled for the day due to some unavoidable reason(s).",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#e-mailsocial-media-policy",
+    "href": "index.html#e-mailsocial-media-policy",
+    "title": "Inferential Statistics",
+    "section": "E-mail/Social Media Policy",
+    "text": "E-mail/Social Media Policy\nI am usually quick to respond to student messages sent through e-mails. However, student other e-media messages are some times send messages which dont need any response from my side and they can visit me in my office hours.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#make-up-exam-policy",
+    "href": "index.html#make-up-exam-policy",
+    "title": "Inferential Statistics",
+    "section": "Make-Up Exam Policy",
+    "text": "Make-Up Exam Policy\nThere are NO make-ups for missed exams. Don’t bother asking.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#academic-dishonesty-policy",
+    "href": "index.html#academic-dishonesty-policy",
+    "title": "Inferential Statistics",
+    "section": "Academic Dishonesty Policy",
+    "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too.",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "taxonomy-of-data.html#agenda",
@@ -123,7 +182,7 @@
     "href": "taxonomy-of-data.html#the-data-frame-1",
     "title": "The Taxonomy of Data",
     "section": "The Data Frame",
-    "text": "The Data Frame\n\n\n\n\n\nbill_depth_mm\nbill_length_mm\nspecies\n\n\n\n\n19.5\n51.9\nChinstrap\n\n\n20.0\n38.8\nAdelie\n\n\n18.5\n42.2\nAdelie\n\n\n18.9\n40.5\nAdelie\n\n\n\n\n\n\n\nA data frame is an array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell storse a value observed for a variable on an observation.\nUnit of observation:\nThe type of the object on which the variables are observed.\n\nHere: an adult foraging penguin near Palmer Station, Antarctica"
+    "text": "The Data Frame\n\n\n\n\n\n\nbill_depth_mm\nbill_length_mm\nspecies\n\n\n\n\n19.4\n41.8\nAdelie\n\n\n18.8\n50.2\nChinstrap\n\n\n15.8\n46.3\nGentoo\n\n\n14.0\n43.3\nGentoo\n\n\n\n\n\n\n\n\nA data frame is an array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell storse a value observed for a variable on an observation.\nUnit of observation:\nThe type of the object on which the variables are observed.\n\nHere: an adult foraging penguin near Palmer Station, Antarctica"
   },
   {
     "objectID": "taxonomy-of-data.html#non-tidy-data-frames",
@@ -147,66 +206,23 @@
     "text": "Data are ubiquitous and precious than oil\nChallenge is to make sense for insightful action\nNot something to learn about but do about"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Inferential Statistics",
-    "section": "",
-    "text": "In this course, you’ll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students are required to finish computer-based assignments. I wish that you learn stuff in this class in a way learning is fixed and timing will be a variable but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not be able to learn well and perform good in the course.\nPre-requisite: Basic Statistics or special approval needed\n\n\nAt the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA"
-  },
-  {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
-    "title": "Inferential Statistics",
-    "section": "",
-    "text": "At the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA"
-  },
-  {
-    "objectID": "index.html#grading-policy",
-    "href": "index.html#grading-policy",
-    "title": "Inferential Statistics",
-    "section": "Grading Policy",
-    "text": "Grading Policy\n\n25% of your grade will be determined by a midterm exam.\n10% of your grade will be determined by Quiz in class.\n15% of your grade will be determined by your attendance and participation in class, and homework. Generally, ask questions and answer them.\n20% of your grade will be determined by a 20-page term paper on when exactly “The Love Boat” jumped the proverbial shark. You will address whether this shark-jumping can be attributed to Ted McGinley, the introduction of Jill Whelan as “Vicki”, or some other cause.\n50% of your grade will be determined by a final exam."
-  },
-  {
-    "objectID": "index.html#attendance-policy",
-    "href": "index.html#attendance-policy",
-    "title": "Inferential Statistics",
-    "section": "Attendance Policy",
-    "text": "Attendance Policy\n\nShowing up is 80 percent of life – Woody Allen, via Marshall Brickman\n\nStudents should be weary of skipping class. I deduct all participation points for a class after five unexcused absences and this can have important implications for a student’s overall grade in the class."
-  },
-  {
-    "objectID": "index.html#late-arrival-of-the-professor-policy",
-    "href": "index.html#late-arrival-of-the-professor-policy",
-    "title": "Inferential Statistics",
-    "section": "Late Arrival of the Professor Policy",
-    "text": "Late Arrival of the Professor Policy\nI will inform students via e-mail/others in advance of class if class is cancelled for the day due to some unavoidable reason(s)."
-  },
-  {
-    "objectID": "index.html#e-mailsocial-media-policy",
-    "href": "index.html#e-mailsocial-media-policy",
-    "title": "Inferential Statistics",
-    "section": "E-mail/Social Media Policy",
-    "text": "E-mail/Social Media Policy\nI am usually quick to respond to student messages sent through e-mails. However, student other e-media messages are some times send messages which dont need any response from my side and they can visit me in my office hours."
-  },
-  {
-    "objectID": "index.html#make-up-exam-policy",
-    "href": "index.html#make-up-exam-policy",
-    "title": "Inferential Statistics",
-    "section": "Make-Up Exam Policy",
-    "text": "Make-Up Exam Policy\nThere are NO make-ups for missed exams. Don’t bother asking."
-  },
-  {
-    "objectID": "index.html#academic-dishonesty-policy",
-    "href": "index.html#academic-dishonesty-policy",
-    "title": "Inferential Statistics",
-    "section": "Academic Dishonesty Policy",
-    "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too."
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics.",
+    "crumbs": [
+      "Schedule"
+    ]
   },
   {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Course Materials",
     "section": "",
-    "text": "Datasets\nTaxonomy of data\nIntroduction to data\nInroduction to data Video\nSummarising data\nlab on basics of data\nProbability\nVideo#1 on Probability\nVideo#2 on Probability (Random Variable)\nDistributions\nNormal distribution video lecture"
+    "text": "Datasets\nTaxonomy of data\nIntroduction to data\nInroduction to data Video\nSummarising data\nlab on basics of data\nProbability\nVideo#1 on Probability\nVideo#2 on Probability (Random Variable)\nDistributions\nNormal distribution video lecture",
+    "crumbs": [
+      "Materials"
+    ]
   }
 ]
