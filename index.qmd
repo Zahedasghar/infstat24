@@ -55,11 +55,6 @@ and try to learn stuff. Don't be that guy.
     participation in class, and homework. Generally, ask questions and
     answer them.
 
--   **20%** of your grade will be determined by a 20-page term paper on
-    when exactly "The Love Boat" jumped the proverbial shark. You will
-    address whether this shark-jumping can be attributed to Ted
-    McGinley, the introduction of Jill Whelan as "Vicki", or some other
-    cause.
 
 -   **50%** of your grade will be determined by a final exam.
 
@@ -81,10 +76,7 @@ cancelled for the day due to some unavoidable reason(s).
 
 ## E-mail/Social Media Policy
 
-I am usually quick to respond to student messages sent through e-mails.
-However, student other e-media messages are some times send messages
-which dont need any response from my side and they can visit me in my
-office hours.
+Discord app will be used for communicating all the class related stuff, queries, and discussions. I may not respond to e-mails or other social media messages. So keep checking the discord app for any updates.
 
 ## Make-Up Exam Policy
 
@@ -106,7 +98,7 @@ Economics.
 |---------|-------------------------------------------------------|--------------|
 | Week #1 | Introduction to types of studies                                         | OpenIntro and FM Ch.1          |
 | Week #2 | Introduction to data  | OI Ch1        |
-| Week#3  | Review of Probability + R/STATA/JAMOVI | OI Ch2 , FM Ch3       |
+| Week#3  | Review of Probability + R/JAMOVI | OI Ch2 , FM Ch3       |
 | Week#4  | Review of Distribution of Random Variables                                | OI Ch3 +HW#1   |
 | Week#5  | Foundations of Statistical Inference                            | OI Ch4 +Quiz#1     |
 | Week#6  | continued                             | OI Ch4         |
