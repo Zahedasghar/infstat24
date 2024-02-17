@@ -1,9 +1,12 @@
 ---
-title: "Inferential Statistics"
+title: "Inferential Statistics (Quantitative Reasoning)"
 ---
 
 # Course Description
-
+ Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns,  and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data.  
+ 
+> Learn to spot nonsense and call it out. 
+ 
 In this course, you'll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students
 are required to finish computer-based assignments. I wish that you learn stuff in this class in a way **learning** is fixed and
 **timing** will be a *variable* but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not
