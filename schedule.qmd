@@ -1,5 +1,6 @@
 ---
 title: "Schedule"
+<<<<<<< HEAD
 #listing:
 #  - id: schedule
 #    contents:
@@ -16,6 +17,8 @@ title: "Schedule"
 #   filter-ui: false
  #tbl-colwidths: [5,20,50,25]
 editor: visual
+=======
+>>>>>>> 14276619f6fc75fc08f4c38dc99ea5a07817a3da
 ---
 
 ## Weekly schedule
