@@ -28,6 +28,136 @@
     "text": "Analysis\n\nQuestion 1\nHow many observations are left in the data after droping missing observations from data?\n\n\nQuestion 2\n\nTake the pakwheels data frame, drop missing observations and use filter for cars manufactured by Suzuki company and save as a new frame called suzuki_cars.\n\n\n\nQuestion 3\nCalculate mean and standard deviation of price of Suzuki company vehicles.\nNote that in the summarise function we created a list of two elements. The names of these elements are user defined, like mean_dd, sd_dd, n, and you could customize these names as you like (just don’t use spaces in your names). Calculating these summary statistics also require that you know the function calls. Note that n() reports the sample size.\nSummary statistics:  Some useful function calls for summary statistics for a single numerical variable are as follows:\n\nmean\nmedian\nsd\nvar\nIQR\nrange\nmin\nmax\n\nWe can also filter based on multiple criteria. Suppose we are interested in cars headed to by Toyota and are between 1000 and 1300 cc engine_capacity, save it as toyota_cars_small.\n\npakwheels |&gt; na.omit() |&gt; \n  filter(company==\"Toyota\", hp&gt;999 &hp&lt;1300)\n\n# A tibble: 2,579 × 18\n     ad_no name    price model_year location mileage registered_city engine_type\n     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;      \n 1 4096758 Toyot… 2.39e6       2017 G- 8, I…    9869 Un-Registered   Petrol     \n 2 4099087 Toyot… 9.65e5       2001 Johar T…  135000 Karachi         Petrol     \n 3 4168130 Toyot… 2.35e6       2017 Lahore …   35000 Un-Registered   Petrol     \n 4 4168233 Toyot… 1.65e6       2014 Bahadur…   80000 Karachi         Petrol     \n 5 4168247 Toyot… 1.28e6       2006 Gulshan…  105000 Karachi         Petrol     \n 6 4167547 Toyot… 1.25e6       2007 I- 8, I…  177000 Islamabad       Petrol     \n 7 4153127 Toyot… 2.47e6       2017 Pak Ara…   66198 Un-Registered   Petrol     \n 8 4160338 Toyot… 2.05e6       2016 Pak Ara…   16667 Un-Registered   Petrol     \n 9 4163093 Toyot… 2.29e6       2016 Pak Ara…   53122 Un-Registered   Petrol     \n10 4089955 Toyot… 2.28e6       2016 Pak Ara…   75546 Un-Registered   Petrol     \n# ℹ 2,569 more rows\n# ℹ 10 more variables: engine_capacity &lt;chr&gt;, transmission &lt;chr&gt;, color &lt;chr&gt;,\n#   assembly &lt;chr&gt;, body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;,\n#   url &lt;chr&gt;, hp &lt;dbl&gt;, company &lt;chr&gt;\n\n\n\n\nQuestion 4\nHow many cars of white color having engine_capacity between 1000 and 1300 cc.\n\n\nQuestion 5\nCalculate mean, median, sd, min, max and IQR from toyota_car_small using summarise function.\n\n\nQuestion 6\nRepeat question 5 for all cars having engine capacity between 1200 and 1300 cc.\n\n\nQuestion 7\nHow many total vehicles by each company.\n\n\nQuestion 8\nCalculate a new variable price_mill using mutate in pakwheels data frame.\n\n\nQuestion 9\nHow many cars are under 1800 and above 1800 are unregistered, respectively? What proportion of cars under 1800 cc and above 1800 cc are unregistered ?\n\n\nQuestion 10\nWhat proporiton of cars manufactured locally and imported unregistered?\n\n\nQuestion 11\nWhat is the most old car displayed for sale i-e model_year and also count cars by model_year.\n\n\nQuestion 12\nUse arrange and list number of cars by color in ascedning and descending order. Which color car is sold the most, second most and third most.\n\n\nQuestion 13\nWhich company car having engine_capacity 1300 cc costs the most.\nHow many cars with model_year 2017 with 1300 cc engine capacity are listed for sale?"
   },
   {
+    "objectID": "taxonomy.html#data-analytics-with-r",
+    "href": "taxonomy.html#data-analytics-with-r",
+    "title": "The Taxonomy of Data",
+    "section": "Data Analytics with R",
+    "text": "Data Analytics with R\n\nWhenever you’re learning a new tool, for a long time you’re going to suck… But the good news is that is typical, that’s something that happens to everyone, and it’s only temporary.",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#wayforward",
+    "href": "taxonomy.html#wayforward",
+    "title": "The Taxonomy of Data",
+    "section": "Wayforward",
+    "text": "Wayforward\n\nHow to stay in the loop with a focus\n\n\nask questions\nSOPs: Follow the guidelines and practice after it\nSend message for your confusions to pollev.com/zahidasghar349\nBeing uncfortable is comfortable, commit mistakes rather staying away",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#agenda",
+    "href": "taxonomy.html#agenda",
+    "title": "The Taxonomy of Data",
+    "section": "Agenda",
+    "text": "Agenda\n\nThe Taxonomy of Data\nR/RStudio\npollev.com/zahidasghar349\nThe Data Frame\nData wrangling\nEducation, cia, gapminder,penguin and nycbike data exploration",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#data-defined",
+    "href": "taxonomy.html#data-defined",
+    "title": "The Taxonomy of Data",
+    "section": "Data defined",
+    "text": "Data defined\n\nData:\n\nAn item of (chiefly numerical) information, esp. one obtained by scientific work, a number of which are typically collected together for reference, analysis, or calculation.\n\n\n\nFrom latin datum: that which is given.\nFacts.\n\n\nVariable:\nA characteristic of an object / unit that can be measured / recorded.\n\n\nObservations: the collection of objects / units that are being measured / recorded.",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#draw-data-taxonomy-on-board",
+    "href": "taxonomy.html#draw-data-taxonomy-on-board",
+    "title": "The Taxonomy of Data",
+    "section": "Draw data Taxonomy on Board",
+    "text": "Draw data Taxonomy on Board",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#types-of-variables",
+    "href": "taxonomy.html#types-of-variables",
+    "title": "The Taxonomy of Data",
+    "section": "Types of Variables",
+    "text": "Types of Variables\nNumerical:\n\nVariables that take numbers as values that are sensible to add, subtract, etc.\n\n\nCategorical:\nVariables that take categories as values (called levels).\n\n\nContinuous:\nA numerical variable that takes values on an interval of the real number line.\n\n\nDiscrete:\nA numerical variable that takes values that have jumps between them (i.e. an ordered countable set).\n\n\nOrdinal:\nA categorical variable with levels that have a natural ordering.\n\n\nNominal:\nA categorical variable with levels with no ordering.",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#observing-penguins",
+    "href": "taxonomy.html#observing-penguins",
+    "title": "The Taxonomy of Data",
+    "section": "Observing Penguins",
+    "text": "Observing Penguins\n\nPalmer Station, Antarctica\nSize measurements for adult foraging penguins near Palmer Station, Antarctica, K. Gorman 2020.",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#variables-beak-length-beak-depth",
+    "href": "taxonomy.html#variables-beak-length-beak-depth",
+    "title": "The Taxonomy of Data",
+    "section": "Variables: Beak Length, Beak Depth",
+    "text": "Variables: Beak Length, Beak Depth\n\n\n\nThese are continuous variables.",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#variable-species",
+    "href": "taxonomy.html#variable-species",
+    "title": "The Taxonomy of Data",
+    "section": "Variable: Species",
+    "text": "Variable: Species\n\n\n\nThis is a nominal variable.",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#the-data-frame-1",
+    "href": "taxonomy.html#the-data-frame-1",
+    "title": "The Taxonomy of Data",
+    "section": "The Data Frame",
+    "text": "The Data Frame\n\n\n\n\n\n\nbill_depth_mm\nbill_length_mm\nspecies\n\n\n\n\n16.6\n36.5\nAdelie\n\n\n18.5\n37.5\nAdelie\n\n\n18.9\n40.8\nAdelie\n\n\n19.5\n49.0\nChinstrap\n\n\n\n\n\n\n\n\nA data frame is an array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell storse a value observed for a variable on an observation.\n\nUnit of observation:\nThe type of the object on which the variables are observed.\n\nHere: an adult foraging penguin near Palmer Station, Antarctica",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#non-tidy-data-frames",
+    "href": "taxonomy.html#non-tidy-data-frames",
+    "title": "The Taxonomy of Data",
+    "section": "Non-tidy Data Frames",
+    "text": "Non-tidy Data Frames\nFrom Wikipedia, a contingency table of sex and handedness.\n\n\nWhat is the unit of observation?\n\n\nWhat are the variables?",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "taxonomy.html#non-tidy-data-frames-1",
+    "href": "taxonomy.html#non-tidy-data-frames-1",
+    "title": "The Taxonomy of Data",
+    "section": "Non-tidy Data Frames",
+    "text": "Non-tidy Data Frames\nFrom the World Bank, the number of hospital beds.\n\n\nWhat is the unit of observation?\n\n\nWhat are the variables?",
+    "crumbs": [
+      "Taxonomy"
+    ]
+  },
+  {
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics.",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Inferential Statistics (Quantitative Reasoning)",
@@ -105,114 +235,6 @@
     "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too.",
     "crumbs": [
       "Home"
-    ]
-  },
-  {
-    "objectID": "taxonomy-of-data.html#agenda",
-    "href": "taxonomy-of-data.html#agenda",
-    "title": "The Taxonomy of Data",
-    "section": "Agenda",
-    "text": "Agenda\n\nThe Taxonomy of Data\nSampling Techniques, Response and Explanatory Variables\npollev.com/zahidasghar349\nThe Data Frame\nRStudio.cloud introduction\n\nTo learn how to critique and construct claims made using data."
-  },
-  {
-    "objectID": "taxonomy-of-data.html#data-defined",
-    "href": "taxonomy-of-data.html#data-defined",
-    "title": "The Taxonomy of Data",
-    "section": "Data defined",
-    "text": "Data defined\nData:\n\nAn item of (chiefly numerical) information, esp. one obtained by scientific work, a number of which are typically collected together for reference, analysis, or calculation.\n\n\nFrom latin datum: that which is given.\nFacts.\nVariable:\nA characteristic of an object / unit that can be measured / recorded.\n\nObservations: the collection of objects / units that are being measured / recorded."
-  },
-  {
-    "objectID": "taxonomy-of-data.html#taxonomy",
-    "href": "taxonomy-of-data.html#taxonomy",
-    "title": "The Taxonomy of Data",
-    "section": "Taxonomy",
-    "text": "Taxonomy\n\nCarl Linnaeus, Systema Naturae, 1735\n\nDraw data Taxonomy on Board"
-  },
-  {
-    "objectID": "taxonomy-of-data.html#the-taxonomy-of-data-1",
-    "href": "taxonomy-of-data.html#the-taxonomy-of-data-1",
-    "title": "The Taxonomy of Data",
-    "section": "The Taxonomy of Data",
-    "text": "The Taxonomy of Data"
-  },
-  {
-    "objectID": "taxonomy-of-data.html#types-of-variables",
-    "href": "taxonomy-of-data.html#types-of-variables",
-    "title": "The Taxonomy of Data",
-    "section": "Types of Variables",
-    "text": "Types of Variables\nNumerical:\nVariables that take numbers as values that are sensible to add, subtract, etc.\nCategorical:\nVariables that take categories as values (called levels).\nContinuous:\nA numerical variable that takes values on an interval of the real number line.\nDiscrete:\nA numerical variable that takes values that have jumps between them (i.e. an ordered countable set).\nOrdinal:\nA categorical variable with levels that have a natural ordering.\nNominal:\nA categorical variable with levels with no ordering."
-  },
-  {
-    "objectID": "taxonomy-of-data.html#section",
-    "href": "taxonomy-of-data.html#section",
-    "title": "The Taxonomy of Data",
-    "section": "",
-    "text": "The type of variable informs the way it should be visualized and analyzed.\nClass volunteers for noting down important questions from class lectures/discord?"
-  },
-  {
-    "objectID": "taxonomy-of-data.html#observing-penguins",
-    "href": "taxonomy-of-data.html#observing-penguins",
-    "title": "The Taxonomy of Data",
-    "section": "Observing Penguins",
-    "text": "Observing Penguins"
-  },
-  {
-    "objectID": "taxonomy-of-data.html#palmer-station-antarctica",
-    "href": "taxonomy-of-data.html#palmer-station-antarctica",
-    "title": "The Taxonomy of Data",
-    "section": "Palmer Station, Antarctica",
-    "text": "Palmer Station, Antarctica\nSize measurements for adult foraging penguins near Palmer Station, Antarctica, K. Gorman 2020."
-  },
-  {
-    "objectID": "taxonomy-of-data.html#variables-beak-length-beak-depth",
-    "href": "taxonomy-of-data.html#variables-beak-length-beak-depth",
-    "title": "The Taxonomy of Data",
-    "section": "Variables: Beak Length, Beak Depth",
-    "text": "Variables: Beak Length, Beak Depth\n\n\nThese are continuous variables."
-  },
-  {
-    "objectID": "taxonomy-of-data.html#variable-species",
-    "href": "taxonomy-of-data.html#variable-species",
-    "title": "The Taxonomy of Data",
-    "section": "Variable: Species",
-    "text": "Variable: Species\n\n\nThis is a nominal variable."
-  },
-  {
-    "objectID": "taxonomy-of-data.html#the-data-frame-1",
-    "href": "taxonomy-of-data.html#the-data-frame-1",
-    "title": "The Taxonomy of Data",
-    "section": "The Data Frame",
-    "text": "The Data Frame\n\n\n\n\n\n\nbill_depth_mm\nbill_length_mm\nspecies\n\n\n\n\n19.4\n41.8\nAdelie\n\n\n18.8\n50.2\nChinstrap\n\n\n15.8\n46.3\nGentoo\n\n\n14.0\n43.3\nGentoo\n\n\n\n\n\n\n\n\nA data frame is an array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell storse a value observed for a variable on an observation.\nUnit of observation:\nThe type of the object on which the variables are observed.\n\nHere: an adult foraging penguin near Palmer Station, Antarctica"
-  },
-  {
-    "objectID": "taxonomy-of-data.html#non-tidy-data-frames",
-    "href": "taxonomy-of-data.html#non-tidy-data-frames",
-    "title": "The Taxonomy of Data",
-    "section": "Non-tidy Data Frames",
-    "text": "Non-tidy Data Frames\nFrom Wikipedia, a contingency table of sex and handedness.\n\n.task[ What is the unit of observation?\nWhat are the variables? ]"
-  },
-  {
-    "objectID": "taxonomy-of-data.html#non-tidy-data-frames-1",
-    "href": "taxonomy-of-data.html#non-tidy-data-frames-1",
-    "title": "The Taxonomy of Data",
-    "section": "Non-tidy Data Frames",
-    "text": "Non-tidy Data Frames\nFrom the World Bank, the number of hospital beds.\n\nWhat is the unit of observation?\nWhat are the variables?"
-  },
-  {
-    "objectID": "taxonomy-of-data.html#section-1",
-    "href": "taxonomy-of-data.html#section-1",
-    "title": "The Taxonomy of Data",
-    "section": "",
-    "text": "Data are ubiquitous and precious than oil\nChallenge is to make sense for insightful action\nNot something to learn about but do about"
-  },
-  {
-    "objectID": "schedule.html#assignments",
-    "href": "schedule.html#assignments",
-    "title": "Schedule",
-    "section": "Assignments",
-    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics.",
-    "crumbs": [
-      "Schedule"
     ]
   },
   {
