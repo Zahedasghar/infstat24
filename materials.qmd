@@ -5,7 +5,7 @@ title: "Course Materials"
 [Datasets](data/)
 
 
-[Taxonomy of data](https://zahidasghar.com/infstat23/taxonomy#/title-slide)
+[Taxonomy of data](https://zahidasghar.com/infstat23/taxonomy_of_data)
 
 [Introduction to data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%201/chp1.pdf)
 
