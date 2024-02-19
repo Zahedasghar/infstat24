@@ -23,6 +23,8 @@ website:
         text: Materials
       - href: https://discord.com/channels/1209036560503279616/1209036560503279619
         text: Forum
+      - href: taxonomy.qmd
+        text: Taxonomy
 
 format:
   html:
