@@ -119,6 +119,126 @@
     "text": "Analysis\n\nQuestion 1\nHow many observations are left in the data after droping missing observations from data?\n\n\nQuestion 2\n\nTake the pakwheels data frame, drop missing observations and use filter for cars manufactured by Suzuki company and save as a new frame called suzuki_cars.\n\n\n\nQuestion 3\nCalculate mean and standard deviation of price of Suzuki company vehicles.\nNote that in the summarise function we created a list of two elements. The names of these elements are user defined, like mean_dd, sd_dd, n, and you could customize these names as you like (just don’t use spaces in your names). Calculating these summary statistics also require that you know the function calls. Note that n() reports the sample size.\nSummary statistics:  Some useful function calls for summary statistics for a single numerical variable are as follows:\n\nmean\nmedian\nsd\nvar\nIQR\nrange\nmin\nmax\n\nWe can also filter based on multiple criteria. Suppose we are interested in cars headed to by Toyota and are between 1000 and 1300 cc engine_capacity, save it as toyota_cars_small.\n\npakwheels |&gt; na.omit() |&gt; \n  filter(company==\"Toyota\", hp&gt;999 &hp&lt;1300)\n\n# A tibble: 2,579 × 18\n     ad_no name    price model_year location mileage registered_city engine_type\n     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;      \n 1 4096758 Toyot… 2.39e6       2017 G- 8, I…    9869 Un-Registered   Petrol     \n 2 4099087 Toyot… 9.65e5       2001 Johar T…  135000 Karachi         Petrol     \n 3 4168130 Toyot… 2.35e6       2017 Lahore …   35000 Un-Registered   Petrol     \n 4 4168233 Toyot… 1.65e6       2014 Bahadur…   80000 Karachi         Petrol     \n 5 4168247 Toyot… 1.28e6       2006 Gulshan…  105000 Karachi         Petrol     \n 6 4167547 Toyot… 1.25e6       2007 I- 8, I…  177000 Islamabad       Petrol     \n 7 4153127 Toyot… 2.47e6       2017 Pak Ara…   66198 Un-Registered   Petrol     \n 8 4160338 Toyot… 2.05e6       2016 Pak Ara…   16667 Un-Registered   Petrol     \n 9 4163093 Toyot… 2.29e6       2016 Pak Ara…   53122 Un-Registered   Petrol     \n10 4089955 Toyot… 2.28e6       2016 Pak Ara…   75546 Un-Registered   Petrol     \n# ℹ 2,569 more rows\n# ℹ 10 more variables: engine_capacity &lt;chr&gt;, transmission &lt;chr&gt;, color &lt;chr&gt;,\n#   assembly &lt;chr&gt;, body_type &lt;chr&gt;, features &lt;chr&gt;, last_updated &lt;chr&gt;,\n#   url &lt;chr&gt;, hp &lt;dbl&gt;, company &lt;chr&gt;\n\n\n\n\nQuestion 4\nHow many cars of white color having engine_capacity between 1000 and 1300 cc.\n\n\nQuestion 5\nCalculate mean, median, sd, min, max and IQR from toyota_car_small using summarise function.\n\n\nQuestion 6\nRepeat question 5 for all cars having engine capacity between 1200 and 1300 cc.\n\n\nQuestion 7\nHow many total vehicles by each company.\n\n\nQuestion 8\nCalculate a new variable price_mill using mutate in pakwheels data frame.\n\n\nQuestion 9\nHow many cars are under 1800 and above 1800 are unregistered, respectively? What proportion of cars under 1800 cc and above 1800 cc are unregistered ?\n\n\nQuestion 10\nWhat proporiton of cars manufactured locally and imported unregistered?\n\n\nQuestion 11\nWhat is the most old car displayed for sale i-e model_year and also count cars by model_year.\n\n\nQuestion 12\nUse arrange and list number of cars by color in ascedning and descending order. Which color car is sold the most, second most and third most.\n\n\nQuestion 13\nWhich company car having engine_capacity 1300 cc costs the most.\nHow many cars with model_year 2017 with 1300 cc engine capacity are listed for sale?"
   },
   {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Datasets\nTaxonomy of data\nIntroduction to data\nAssociation and Causation\nInroduction to data Video\nSummarising data\nlab on basics of data\nProbability\nVideo#1 on Probability\nVideo#2 on Probability (Random Variable)\nDistributions\nNormal distribution video lecture",
+    "crumbs": [
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "",
+    "text": "Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data.\n\nLearn to spot nonsense and call it out.\n\nIn this course, you’ll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students are required to finish computer-based assignments. I wish that you learn stuff in this class in a way learning is fixed and timing will be a variable but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not be able to learn well and perform good in the course.\nPre-requisite: Basic Statistics or special approval needed\n\n\nAt the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "",
+    "text": "At the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#grading-policy",
+    "href": "index.html#grading-policy",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "Grading Policy",
+    "text": "Grading Policy\n\n25% of your grade will be determined by a midterm exam.\n10% of your grade will be determined by Quiz in class.\n15% of your grade will be determined by your attendance and participation in class, and homework. Generally, ask questions and answer them.\n50% of your grade will be determined by a final exam.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#attendance-policy",
+    "href": "index.html#attendance-policy",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "Attendance Policy",
+    "text": "Attendance Policy\n\nShowing up is 80 percent of life – Woody Allen, via Marshall Brickman\n\nStudents should be weary of skipping class. I deduct all participation points for a class after five unexcused absences and this can have important implications for a student’s overall grade in the class.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#late-arrival-of-the-professor-policy",
+    "href": "index.html#late-arrival-of-the-professor-policy",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "Late Arrival of the Professor Policy",
+    "text": "Late Arrival of the Professor Policy\nI will inform students via e-mail/others in advance of class if class is cancelled for the day due to some unavoidable reason(s).",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#e-mailsocial-media-policy",
+    "href": "index.html#e-mailsocial-media-policy",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "E-mail/Social Media Policy",
+    "text": "E-mail/Social Media Policy\nDiscord app will be used for communicating all the class related stuff, queries, and discussions. I may not respond to e-mails or other social media messages. So keep checking the discord app for any updates.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#make-up-exam-policy",
+    "href": "index.html#make-up-exam-policy",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "Make-Up Exam Policy",
+    "text": "Make-Up Exam Policy\nThere are NO make-ups for missed exams. Don’t bother asking.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#academic-dishonesty-policy",
+    "href": "index.html#academic-dishonesty-policy",
+    "title": "Inferential Statistics (Quantitative Reasoning)",
+    "section": "Academic Dishonesty Policy",
+    "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.\n\n\n\nTime\nDays\nPlace\n\n\n\n\n1230-1400\nMonday, Tuesdayd\nRoom#1",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#course-schedule",
+    "href": "schedule.html#course-schedule",
+    "title": "Schedule",
+    "section": "",
+    "text": "The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.\n\n\n\nTime\nDays\nPlace\n\n\n\n\n1230-1400\nMonday, Tuesdayd\nRoom#1",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Sunday at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics.",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
     "objectID": "taxonomy.html#data-analytics-with-r",
     "href": "taxonomy.html#data-analytics-with-r",
     "title": "The Taxonomy of Data",
@@ -249,124 +369,25 @@
     ]
   },
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.\n\n\n\nTime\nDays\nPlace\n\n\n\n\n1230-1400\nMonday, Tuesdayd\nRoom#1",
-    "crumbs": [
-      "Schedule"
-    ]
+    "objectID": "association_causation.html#gdp-per-capita-and-share-of-protestants",
+    "href": "association_causation.html#gdp-per-capita-and-share-of-protestants",
+    "title": "Association and Causation",
+    "section": "GDP Per Capita and Share of Protestants",
+    "text": "GDP Per Capita and Share of Protestants"
   },
   {
-    "objectID": "schedule.html#course-schedule",
-    "href": "schedule.html#course-schedule",
-    "title": "Schedule",
-    "section": "",
-    "text": "The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.\n\n\n\nTime\nDays\nPlace\n\n\n\n\n1230-1400\nMonday, Tuesdayd\nRoom#1",
-    "crumbs": [
-      "Schedule"
-    ]
+    "objectID": "association_causation.html#literacy-per-capita-and-share-of-protestants",
+    "href": "association_causation.html#literacy-per-capita-and-share-of-protestants",
+    "title": "Association and Causation",
+    "section": "Literacy Per Capita and Share of Protestants",
+    "text": "Literacy Per Capita and Share of Protestants"
   },
   {
-    "objectID": "schedule.html#assignments",
-    "href": "schedule.html#assignments",
-    "title": "Schedule",
-    "section": "Assignments",
-    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Sunday at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics.",
-    "crumbs": [
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "",
-    "text": "Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data.\n\nLearn to spot nonsense and call it out.\n\nIn this course, you’ll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students are required to finish computer-based assignments. I wish that you learn stuff in this class in a way learning is fixed and timing will be a variable but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not be able to learn well and perform good in the course.\nPre-requisite: Basic Statistics or special approval needed\n\n\nAt the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "",
-    "text": "At the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#grading-policy",
-    "href": "index.html#grading-policy",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "Grading Policy",
-    "text": "Grading Policy\n\n25% of your grade will be determined by a midterm exam.\n10% of your grade will be determined by Quiz in class.\n15% of your grade will be determined by your attendance and participation in class, and homework. Generally, ask questions and answer them.\n50% of your grade will be determined by a final exam.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#attendance-policy",
-    "href": "index.html#attendance-policy",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "Attendance Policy",
-    "text": "Attendance Policy\n\nShowing up is 80 percent of life – Woody Allen, via Marshall Brickman\n\nStudents should be weary of skipping class. I deduct all participation points for a class after five unexcused absences and this can have important implications for a student’s overall grade in the class.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#late-arrival-of-the-professor-policy",
-    "href": "index.html#late-arrival-of-the-professor-policy",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "Late Arrival of the Professor Policy",
-    "text": "Late Arrival of the Professor Policy\nI will inform students via e-mail/others in advance of class if class is cancelled for the day due to some unavoidable reason(s).",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#e-mailsocial-media-policy",
-    "href": "index.html#e-mailsocial-media-policy",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "E-mail/Social Media Policy",
-    "text": "E-mail/Social Media Policy\nDiscord app will be used for communicating all the class related stuff, queries, and discussions. I may not respond to e-mails or other social media messages. So keep checking the discord app for any updates.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#make-up-exam-policy",
-    "href": "index.html#make-up-exam-policy",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "Make-Up Exam Policy",
-    "text": "Make-Up Exam Policy\nThere are NO make-ups for missed exams. Don’t bother asking.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#academic-dishonesty-policy",
-    "href": "index.html#academic-dishonesty-policy",
-    "title": "Inferential Statistics (Quantitative Reasoning)",
-    "section": "Academic Dishonesty Policy",
-    "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
-    "section": "",
-    "text": "Datasets\nTaxonomy of data\nIntroduction to data\nAssociation and Causation\nInroduction to data Video\nSummarising data\nlab on basics of data\nProbability\nVideo#1 on Probability\nVideo#2 on Probability (Random Variable)\nDistributions\nNormal distribution video lecture",
-    "crumbs": [
-      "Materials"
-    ]
+    "objectID": "association_causation.html#counties",
+    "href": "association_causation.html#counties",
+    "title": "Association and Causation",
+    "section": "450 counties",
+    "text": "450 counties\nDistance from Martin Luther’s birthplace: Wittenberg (Germany) place of Protestant Reformation\n\nThe result: the closer counties were to the center of the Protestant movement, the higher their average incomes were—and the higher their literacy rates too. And after controlling for literacy rates, distance from Wittenberg no longer predicted higher income. To the extent that living near the origin of the Protestant Reformation raised people’s incomes, it was entirely attributable to gains in the ability to read and write."
   },
   {
     "objectID": "slides/association_causation.html#gdp-per-capita-and-share-of-protestants",
