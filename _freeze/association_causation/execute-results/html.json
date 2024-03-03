@@ -1,0 +1,19 @@
+{
+  "hash": "b680b0f0941e6fee1581e93c66f09f57",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"[Association and Causation]{.flow}\"\nsubtitle: \"[Quantitative Reasoning]{style=color:red;}\"\nauthor: \"[ZAHID ASGHAR, School of Economics, QAU]{.adage}\"\nformat:\n  revealjs:\n    logo: \"/images/quant_reason.jpeg\"\n    css: [stat20.css, slides.scss, styles.scss]\n    docs: true\n    chalkboard: true\n    keep-md: false\n    title-slide-attributes:\n      data-background-image: /images/stat.png\n      data-background-size: contain\n      data-background-opacity: 30%\nexecute: \n  freeze: auto\n  warning: false\n  message: false\n\neditor: visual\n---\n\n::: {.cell}\n\n:::\n\n\n# Good Noon!\n\n# Becker and Woessmann Research on Protestantism and Economic Growth\n\n## GDP Per Capita and Share of Protestants\n\n![](/images/association2.png){fig-align=\"center\" width=\"700\"}\n\n## Literacy Per Capita and Share of Protestants\n\n![](/images/association1.png){alt=\"Literacy Per Capita and Share of Protestants\" fig-align=\"center\" width=\"700\"}\n\n# No causal conclusion on a small sample of countries\n\n## 450 counties\n\nDistance from Martin Luther's birthplace: Wittenberg (Germany) place of Protestant Reformation\n\n> The result: the closer counties were to the center of the Protestant\n movement, the higher their average incomes were—and the higher their\n literacy rates too. And after controlling for literacy rates, distance from\n Wittenberg no longer predicted higher income. To the extent that living near\n the origin of the Protestant Reformation raised people’s incomes, it was\n entirely attributable to gains in the ability to read and write.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

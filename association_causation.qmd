@@ -1,0 +1,52 @@
+---
+title: "[Association and Causation]{.flow}"
+subtitle: "[Quantitative Reasoning]{style=color:red;}"
+author: "[ZAHID ASGHAR, School of Economics, QAU]{.adage}"
+format:
+  revealjs:
+    logo: "/images/quant_reason.jpeg"
+    css: [stat20.css, slides.scss, styles.scss]
+    docs: true
+    chalkboard: true
+    keep-md: false
+    title-slide-attributes:
+      data-background-image: /images/stat.png
+      data-background-size: contain
+      data-background-opacity: 30%
+execute: 
+  freeze: auto
+  warning: false
+  message: false
+
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(knitr)
+```
+
+# Good Noon!
+
+# Becker and Woessmann Research on Protestantism and Economic Growth
+
+## GDP Per Capita and Share of Protestants
+
+![](/images/association2.png){fig-align="center" width="700"}
+
+## Literacy Per Capita and Share of Protestants
+
+![](/images/association1.png){alt="Literacy Per Capita and Share of Protestants" fig-align="center" width="700"}
+
+# No causal conclusion on a small sample of countries
+
+## 450 counties
+
+Distance from Martin Luther's birthplace: Wittenberg (Germany) place of Protestant Reformation
+
+> The result: the closer counties were to the center of the Protestant
+ movement, the higher their average incomes were—and the higher their
+ literacy rates too. And after controlling for literacy rates, distance from
+ Wittenberg no longer predicted higher income. To the extent that living near
+ the origin of the Protestant Reformation raised people’s incomes, it was
+ entirely attributable to gains in the ability to read and write.
