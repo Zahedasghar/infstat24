@@ -19,10 +19,18 @@ editor: visual
 
 ---
 
-## Weekly schedule
 
-::: {#schedule}
-:::
+
+## Course Schedule
+
+The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.
+
+| Time | Days | Place | 
+|------|------|-------|
+|1230-1400|Monday, Tuesdayd|Room#1|
+
+
+
 
 ## Assignments
 
@@ -30,7 +38,7 @@ Below are assignment due dates for the semester. You can find details and assign
 
 ### Homework
 
-Homework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.
+Homework will be due on Sunday at 11:59pm. You will have one week to complete each homework assignment.
 
 ### Labs
 

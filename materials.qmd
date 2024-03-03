@@ -9,6 +9,8 @@ title: "Course Materials"
 
 [Introduction to data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%201/chp1.pdf)
 
+[Association and Causation](https://zahidasghar.com/infstat24/association_causation.html)
+
 [Inroduction to data Video](https://youtu.be/JqErvErJdmU) 
 
 [Summarising data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%202/chp2.pdf)

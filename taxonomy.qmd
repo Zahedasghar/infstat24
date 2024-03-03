@@ -52,17 +52,15 @@ library(knitr)
 5.  Data wrangling
 6.  Education, cia, gapminder,penguin and nycbike data exploration
 
-------------------------------------------------------------------------
+## 
 
-```{r fig.align='center'}
-knitr::include_graphics("images/shoebill-1.png")
-```
+![](/images/shoebill-1.png)
 
-------------------------------------------------------------------------
+## 
 
-```{r fig.align='center'}
-knitr::include_graphics("images/Stat 20 Sketches For Slides-5.jpg")
-```
+![](/images/plant-taxonomy.jpeg)
+
+## 
 
 ::: {.center .adage}
 To learn how to critique and construct
@@ -102,9 +100,7 @@ A characteristic of an object / unit that can be measured / recorded.
 
 ::: columns
 ::: {.column width="50%"}
-```{r fig.align='center'}
-knitr::include_graphics("images/plant-taxonomy.jpeg")
-```
+![](/images/plant-taxonomy.jpeg)
 :::
 
 ::: {.column width="50%"}
@@ -114,9 +110,7 @@ Carl Linnaeus, *Systema Naturae*, 1735.
 
 ## Draw data Taxonomy on Board
 
-```{r}
-knitr::include_graphics("images/taxonomy-of-data.png")
-```
+![](/images/taxonomy-of-data.png)
 
 ## Types of Variables {.scrollable}
 
@@ -166,9 +160,7 @@ The **type** of variable informs the way it should be **visualized** and **analy
 
 ## Observing Penguins
 
-```{r out.width = "60%"}
-knitr::include_graphics("images/palmer-station.jpeg")
-```
+![](/images/palmer-station.jpeg)
 
 ### Palmer Station, Antarctica
 
@@ -176,9 +168,7 @@ knitr::include_graphics("images/palmer-station.jpeg")
 
 ## Variables: Beak Length, Beak Depth
 
-```{r out.width = "60%"}
-knitr::include_graphics("images/culmen_depth.png")
-```
+![Beak Length and Beak Depth](/images/culmen_depth.png)
 
 . . .
 
@@ -186,9 +176,7 @@ knitr::include_graphics("images/culmen_depth.png")
 
 ## Variable: Species
 
-```{r out.width = "70%"}
-knitr::include_graphics("images/lter_penguins.png")
-```
+![Species](/images/penguin-species.png)
 
 . . .
 
@@ -220,9 +208,7 @@ The type of the object on which the variables are observed.
 
 From Wikipedia, a *contingency table* of sex and handedness.
 
-```{r}
-knitr::include_graphics("images/non-tidy-contingency-table.png")
-```
+![](/images/non-tidy-contingency-table.png)
 
 . . .
 
@@ -236,9 +222,7 @@ What are the variables?
 
 From the World Bank, the number of hospital beds.
 
-```{r}
-knitr::include_graphics("images/non-tidy-world-bank.png")
-```
+![](/images/non-tidy-world-bank.png)
 
 . . .
 
