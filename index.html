@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Zahid Asghar">
+<meta name="dcterms.date" content="2024-09-29">
 
-<title>Inferential Statistics - Inferential Statistics (Quantitative Reasoning)</title>
+<title>Machine Learning and Big Data in Economics – Inferential Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,33 +69,67 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="style.scss">
 </head>
 
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Machine Learning and Big Data in Economics</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Economics</div>
+                <div class="quarto-category">Big Data</div>
+                <div class="quarto-category">Machine Learning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Zahid Asghar </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 29, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/ggplot2.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/ML.webp" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/Zahedasghar" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -132,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taxonomy.html" class="sidebar-item-text sidebar-link">
+  <a href="./taxonomy.qmd" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Taxonomy</span></a>
   </div>
 </li>
@@ -146,213 +182,148 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a>
+  <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description:</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning Outcomes:</a></li>
+  <li><a href="#course-structure-and-topics" id="toc-course-structure-and-topics" class="nav-link" data-scroll-target="#course-structure-and-topics">Course Structure and Topics</a>
   <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#week-1-2-introduction-to-machine-learning-and-big-data-in-economics" id="toc-week-1-2-introduction-to-machine-learning-and-big-data-in-economics" class="nav-link" data-scroll-target="#week-1-2-introduction-to-machine-learning-and-big-data-in-economics">Week 1-2: Introduction to Machine Learning and Big Data in Economics</a></li>
+  <li><a href="#week-3-4-supervised-learning-and-regression" id="toc-week-3-4-supervised-learning-and-regression" class="nav-link" data-scroll-target="#week-3-4-supervised-learning-and-regression">Week 3-4: Supervised Learning and Regression</a></li>
+  <li><a href="#week-5-6-classification-and-decision-trees" id="toc-week-5-6-classification-and-decision-trees" class="nav-link" data-scroll-target="#week-5-6-classification-and-decision-trees">Week 5-6: Classification and Decision Trees</a></li>
+  <li><a href="#week-7-8-causal-inference-using-machine-learning" id="toc-week-7-8-causal-inference-using-machine-learning" class="nav-link" data-scroll-target="#week-7-8-causal-inference-using-machine-learning">Week 7-8: Causal Inference Using Machine Learning</a></li>
+  <li><a href="#week-9-10-unsupervised-learning" id="toc-week-9-10-unsupervised-learning" class="nav-link" data-scroll-target="#week-9-10-unsupervised-learning">Week 9-10: Unsupervised Learning</a></li>
+  <li><a href="#week-11-12-model-evaluation-and-cross-validation" id="toc-week-11-12-model-evaluation-and-cross-validation" class="nav-link" data-scroll-target="#week-11-12-model-evaluation-and-cross-validation">Week 11-12: Model Evaluation and Cross-Validation</a></li>
+  <li><a href="#week-13-14-big-data-and-machine-learning-in-economics" id="toc-week-13-14-big-data-and-machine-learning-in-economics" class="nav-link" data-scroll-target="#week-13-14-big-data-and-machine-learning-in-economics">Week 13-14: Big Data and Machine Learning in Economics</a></li>
+  <li><a href="#week-15-advanced-topics-and-review" id="toc-week-15-advanced-topics-and-review" class="nav-link" data-scroll-target="#week-15-advanced-topics-and-review">Week 15: Advanced Topics and Review</a></li>
+  <li><a href="#week-16-empirical-project-presentations" id="toc-week-16-empirical-project-presentations" class="nav-link" data-scroll-target="#week-16-empirical-project-presentations">Week 16: Empirical Project Presentations</a></li>
   </ul></li>
-  <li><a href="#required-readings" id="toc-required-readings" class="nav-link" data-scroll-target="#required-readings">Required Readings</a></li>
-  <li><a href="#course-policy" id="toc-course-policy" class="nav-link" data-scroll-target="#course-policy">Course Policy</a>
-  <ul class="collapse">
-  <li><a href="#grading-policy" id="toc-grading-policy" class="nav-link" data-scroll-target="#grading-policy">Grading Policy</a></li>
-  <li><a href="#attendance-policy" id="toc-attendance-policy" class="nav-link" data-scroll-target="#attendance-policy">Attendance Policy</a></li>
-  <li><a href="#late-arrival-of-the-professor-policy" id="toc-late-arrival-of-the-professor-policy" class="nav-link" data-scroll-target="#late-arrival-of-the-professor-policy">Late Arrival of the Professor Policy</a></li>
-  <li><a href="#e-mailsocial-media-policy" id="toc-e-mailsocial-media-policy" class="nav-link" data-scroll-target="#e-mailsocial-media-policy">E-mail/Social Media Policy</a></li>
-  <li><a href="#make-up-exam-policy" id="toc-make-up-exam-policy" class="nav-link" data-scroll-target="#make-up-exam-policy">Make-Up Exam Policy</a></li>
-  <li><a href="#academic-dishonesty-policy" id="toc-academic-dishonesty-policy" class="nav-link" data-scroll-target="#academic-dishonesty-policy">Academic Dishonesty Policy</a></li>
-  </ul></li>
-  <li><a href="#class-schedule" id="toc-class-schedule" class="nav-link" data-scroll-target="#class-schedule">Class Schedule</a></li>
+  <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment:</a></li>
+  <li><a href="#optional-textbooks" id="toc-optional-textbooks" class="nav-link" data-scroll-target="#optional-textbooks">Optional Textbooks:</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Inferential Statistics (Quantitative Reasoning)</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="course-description" class="level1">
-<h1>Course Description</h1>
-<p>Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data.</p>
-<blockquote class="blockquote">
-<p>Learn to spot nonsense and call it out.</p>
-</blockquote>
-<p>In this course, you’ll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students are required to finish computer-based assignments. I wish that you learn stuff in this class in a way <strong>learning</strong> is fixed and <strong>timing</strong> will be a <em>variable</em> but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not be able to learn well and perform good in the course.</p>
-<p><strong>Pre-requisite: Basic Statistics or special approval needed</strong></p>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<p>At the end of this course, the student should be able to:</p>
+<section id="course-description" class="level2">
+<h2 class="anchored" data-anchor-id="course-description">Course Description:</h2>
+<p>This course provides an introduction to machine learning and related methods for big data from an economics perspective. Students will learn modern estimation methods for high-dimensional data, with a focus on causal inference and prediction problems in economics, business, and related fields. Through programming assignments and a final empirical project, students will apply machine learning techniques to real-world data.</p>
+</section>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes:</h2>
+<p>By the end of the course, students should be able to:</p>
 <ul>
-<li>Define and summarize research design and data collection principles and concepts.</li>
-<li>Create and interpret graphical data summaries.</li>
-<li>Calculate and interpret summary statistics.</li>
-<li>Calculate probabilities.</li>
-<li>Understand inferential statistics.</li>
-<li>Perform hypothesis tests for numerical and categorical data</li>
-<li>Calculate confidence interval for numerical and categorical data</li>
-<li>ANOVA</li>
+<li>Apply machine learning methods to estimate causal effects in experimental and observational settings.</li>
+<li>Solve prediction problems in economics using machine learning techniques.</li>
+<li>Understand the uses, strengths, and limitations of machine learning for answering economic questions.</li>
+<li>Implement machine learning algorithms using Python/R.</li>
+<li>Analyze and interpret economic data using machine learning methods.</li>
+<li>Conduct an empirical research project utilizing machine learning techniques.</li>
+</ul>
+</section>
+<section id="course-structure-and-topics" class="level2">
+<h2 class="anchored" data-anchor-id="course-structure-and-topics">Course Structure and Topics</h2>
+<section id="week-1-2-introduction-to-machine-learning-and-big-data-in-economics" class="level3">
+<h3 class="anchored" data-anchor-id="week-1-2-introduction-to-machine-learning-and-big-data-in-economics">Week 1-2: Introduction to Machine Learning and Big Data in Economics</h3>
+<ul>
+<li>Overview of big data and machine learning.</li>
+<li>Key differences between traditional econometric techniques and machine learning methods.</li>
+<li><strong>Readings</strong>: Taddy, M. (2019), Chapter 1 from <em>Business Data Science</em></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/big_data.jpg" class="img-fluid figure-img"></p>
+<figcaption>Big Data</figcaption>
+</figure>
+</div>
+</section>
+<section id="week-3-4-supervised-learning-and-regression" class="level3">
+<h3 class="anchored" data-anchor-id="week-3-4-supervised-learning-and-regression">Week 3-4: Supervised Learning and Regression</h3>
+<ul>
+<li>Overview of supervised learning and its relevance to economic data.</li>
+<li><strong>Lab</strong>: Implementing regression methods using Python/R.</li>
+<li><strong>Readings</strong>: Taddy, M. (2019), Chapter 3; Gareth et al.&nbsp;(2017), Chapter 3, 6 from <em>An Introduction to Statistical Learning</em></li>
+</ul>
+</section>
+<section id="week-5-6-classification-and-decision-trees" class="level3">
+<h3 class="anchored" data-anchor-id="week-5-6-classification-and-decision-trees">Week 5-6: Classification and Decision Trees</h3>
+<ul>
+<li>Decision trees, random forests.</li>
+<li><strong>Lab</strong>: Decision trees and random forests in Python/R.</li>
+<li><strong>Readings</strong>: Gareth et al.&nbsp;(2017), Chapter 4, 8</li>
+</ul>
+</section>
+<section id="week-7-8-causal-inference-using-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="week-7-8-causal-inference-using-machine-learning">Week 7-8: Causal Inference Using Machine Learning</h3>
+<ul>
+<li>Randomized control trials vs observational data.</li>
+<li><strong>Readings</strong>: Taddy, M. (2019), Chapter 4 from <em>Business Data Science</em>; Angrist &amp; Pischke (2014) Chapter 2 from <em>Mastering ’Metrics</em></li>
+</ul>
+</section>
+<section id="week-9-10-unsupervised-learning" class="level3">
+<h3 class="anchored" data-anchor-id="week-9-10-unsupervised-learning">Week 9-10: Unsupervised Learning</h3>
+<ul>
+<li>Overview of unsupervised learning: PCA and K-means clustering.</li>
+<li><strong>Lab</strong>: PCA and clustering in Python/R.</li>
+<li><strong>Readings</strong>: Gareth et al.&nbsp;(2017), Chapter 10</li>
+</ul>
+</section>
+<section id="week-11-12-model-evaluation-and-cross-validation" class="level3">
+<h3 class="anchored" data-anchor-id="week-11-12-model-evaluation-and-cross-validation">Week 11-12: Model Evaluation and Cross-Validation</h3>
+<ul>
+<li>Methods for model evaluation, cross-validation.</li>
+<li><strong>Lab</strong>: Cross-validation and model selection in Python/R.</li>
+<li><strong>Readings</strong>: Gareth et al.&nbsp;(2017), Chapter 5</li>
+</ul>
+</section>
+<section id="week-13-14-big-data-and-machine-learning-in-economics" class="level3">
+<h3 class="anchored" data-anchor-id="week-13-14-big-data-and-machine-learning-in-economics">Week 13-14: Big Data and Machine Learning in Economics</h3>
+<ul>
+<li>Case studies in business and economics.</li>
+<li><strong>Readings</strong>: Taddy, M. (2019), Chapter 5</li>
+</ul>
+</section>
+<section id="week-15-advanced-topics-and-review" class="level3">
+<h3 class="anchored" data-anchor-id="week-15-advanced-topics-and-review">Week 15: Advanced Topics and Review</h3>
+<ul>
+<li>Ensemble methods: boosting and bagging.</li>
+<li><strong>Lab</strong>: Implementing ensemble methods using Python/R.</li>
+<li><strong>Readings</strong>: Gareth et al.&nbsp;(2017), Chapter 8</li>
+</ul>
+</section>
+<section id="week-16-empirical-project-presentations" class="level3">
+<h3 class="anchored" data-anchor-id="week-16-empirical-project-presentations">Week 16: Empirical Project Presentations</h3>
+<ul>
+<li>Students present their final empirical projects applying machine learning to a real-world dataset.</li>
 </ul>
 </section>
 </section>
-<section id="required-readings" class="level1">
-<h1>Required Readings</h1>
+<section id="assessment" class="level2">
+<h2 class="anchored" data-anchor-id="assessment">Assessment:</h2>
+<ul>
+<li><strong>Assignments (40%)</strong>: Regular programming assignments.</li>
+<li><strong>Midterm Exam (20%)</strong>.</li>
+<li><strong>Final Project (40%)</strong>: Empirical project applying course concepts to data.</li>
+</ul>
+</section>
+<section id="optional-textbooks" class="level2">
+<h2 class="anchored" data-anchor-id="optional-textbooks">Optional Textbooks:</h2>
 <ol type="1">
-<li>Christopher D. Barr, David M. Diez, and Mine Çetinkaya-Rundel, OpenIntro Statistics Textbook by Center for Open Education</li>
-<li>David Freedman, Robert Pisani, Roger Purves, Statistics 4th Edition,John Wiley &amp; Sons, New York.</li>
-<li>We will use the latest free version of: R Studio; You’ll first need to download (R). JAMOVI/Excel in R is very user friendly way which will also be used.</li>
+<li><p>Taddy, M. (2019) <em>Business Data Science: Combining Machine Learning and Economics to Optimize Business Decisions</em>.</p></li>
+<li><p>ISL Gareth, J.; Witten, D.; Hastie, T.; and Tibshirani, R. (2023) <em>An Introduction to Statistical Learning</em> , 2nd Edition. Springer.</p></li>
+<li><p>Angrist, J. &amp; Pischke, J. (2014) <em>Mastering ’Metrics: The Path from Cause to Effect</em>.</p></li>
 </ol>
 </section>
-<section id="course-policy" class="level1">
-<h1>Course Policy</h1>
-<p>I will detail the policy for this course below. Basically, don’t cheat and try to learn stuff. Don’t be that guy.</p>
-<section id="grading-policy" class="level2">
-<h2 class="anchored" data-anchor-id="grading-policy">Grading Policy</h2>
-<ul>
-<li><p><strong>25%</strong> of your grade will be determined by a midterm exam.</p></li>
-<li><p><strong>10%</strong> of your grade will be determined by Quiz in class.</p></li>
-<li><p><strong>15%</strong> of your grade will be determined by your attendance and participation in class, and homework. Generally, ask questions and answer them.</p></li>
-<li><p><strong>50%</strong> of your grade will be determined by a final exam.</p></li>
-</ul>
-</section>
-<section id="attendance-policy" class="level2">
-<h2 class="anchored" data-anchor-id="attendance-policy">Attendance Policy</h2>
-<blockquote class="blockquote">
-<p><em>Showing up is 80 percent of life</em> – Woody Allen, <a href="http://quoteinvestigator.com/2013/06/10/showing-up/#note-6553-1">via Marshall Brickman</a></p>
-</blockquote>
-<p>Students should be weary of skipping class. I deduct <em>all</em> participation points for a class after five unexcused absences and this can have important implications for a student’s overall grade in the class.</p>
-</section>
-<section id="late-arrival-of-the-professor-policy" class="level2">
-<h2 class="anchored" data-anchor-id="late-arrival-of-the-professor-policy">Late Arrival of the Professor Policy</h2>
-<p>I will inform students via e-mail/others in advance of class if class is cancelled for the day due to some unavoidable reason(s).</p>
-</section>
-<section id="e-mailsocial-media-policy" class="level2">
-<h2 class="anchored" data-anchor-id="e-mailsocial-media-policy">E-mail/Social Media Policy</h2>
-<p>Discord app will be used for communicating all the class related stuff, queries, and discussions. I may not respond to e-mails or other social media messages. So keep checking the discord app for any updates.</p>
-</section>
-<section id="make-up-exam-policy" class="level2">
-<h2 class="anchored" data-anchor-id="make-up-exam-policy">Make-Up Exam Policy</h2>
-<p>There are <strong>NO</strong> make-ups for missed exams. Don’t bother asking.</p>
-</section>
-<section id="academic-dishonesty-policy" class="level2">
-<h2 class="anchored" data-anchor-id="academic-dishonesty-policy">Academic Dishonesty Policy</h2>
-<p>Don’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too.</p>
-</section>
-</section>
-<section id="class-schedule" class="level1">
-<h1>Class Schedule</h1>
-<p>Here is that calendar but may change as per time table of School of Economics.</p>
-<table class="table">
-<caption>Tentative Schedule (Little variation maybe there as per topic/students need)</caption>
-<colgroup>
-<col style="width: 11%">
-<col style="width: 70%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Week</th>
-<th>Topic Covered</th>
-<th>Book Chapter</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Week #1</td>
-<td>Introduction to types of studies</td>
-<td>OpenIntro and FM Ch.1</td>
-</tr>
-<tr class="even">
-<td>Week #2</td>
-<td>Introduction to data</td>
-<td>OI Ch1</td>
-</tr>
-<tr class="odd">
-<td>Week#3</td>
-<td>Review of Probability + R/JAMOVI</td>
-<td>OI Ch2 , FM Ch3</td>
-</tr>
-<tr class="even">
-<td>Week#4</td>
-<td>Review of Distribution of Random Variables</td>
-<td>OI Ch3 +HW#1</td>
-</tr>
-<tr class="odd">
-<td>Week#5</td>
-<td>Foundations of Statistical Inference</td>
-<td>OI Ch4 +Quiz#1</td>
-</tr>
-<tr class="even">
-<td>Week#6</td>
-<td>continued</td>
-<td>OI Ch4</td>
-</tr>
-<tr class="odd">
-<td>Week#7</td>
-<td>continued</td>
-<td>OI Ch4+HW#2</td>
-</tr>
-<tr class="even">
-<td>Week#8</td>
-<td>Inference for categorical data</td>
-<td>OI Ch5</td>
-</tr>
-<tr class="odd">
-<td>Week#9</td>
-<td>continued</td>
-<td>SW7+Quiz#2</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Mid Term Exam as per SOE date sheet</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Week#11</td>
-<td>Inference for numerical data</td>
-<td>OI ch6</td>
-</tr>
-<tr class="even">
-<td>Week#12</td>
-<td>continued</td>
-<td>OI ch6</td>
-</tr>
-<tr class="odd">
-<td>Week#13</td>
-<td>continued</td>
-<td>OI ch6</td>
-</tr>
-<tr class="even">
-<td>Week#14</td>
-<td>ANOVA and inference for linear regression</td>
-<td>OI ch6 &amp; 7</td>
-</tr>
-<tr class="odd">
-<td>Week#15</td>
-<td>Discussion of Empirical Study</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Week#16</td>
-<td>Wrap up</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<p><a href="https://maxkasy.github.io/home/ML_Oxford_2024/">Foundations of ML</a></p>
+<p><a href="https://ocw.mit.edu/courses/15-071-the-analytics-edge-spring-2017/pages/trees/">The Analytics Edge</a></p>
+<p><a href="https://www.bankofcanada.ca/2023/10/staff-analytical-note-2023-16/">Machine Learning for Econometrics</a></p>
+<p><a href="https://psantanna.com/Econ520">Data Science for Economics</a></p>
 
 
 </section>
@@ -393,18 +364,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -436,7 +396,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/infstat24\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -471,7 +471,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

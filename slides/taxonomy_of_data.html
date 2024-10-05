@@ -8,10 +8,10 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="ZAHID ASGHAR, School of Economics, QAU">
-  <title>Inferential Statistics - The Taxonomy of Data</title>
+  <title>Inferential Statistics – The Taxonomy of Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -430,8 +430,7 @@
 <p><img data-src="../images/plant-taxonomy.jpeg"></p>
 </div><div class="column" style="width:50%;">
 <p>Carl Linnaeus, <em>Systema Naturae</em>, 1735.</p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="draw-data-taxonomy-on-board" class="slide level2">
 <h2>Draw data Taxonomy on Board</h2>
@@ -503,8 +502,7 @@
 <h2>The Data Frame</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
+<table class="caption-top" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">bill_depth_mm</th>
@@ -537,7 +535,6 @@
 </table>
 
 
-</div>
 </div>
 </div>
 <p>A <strong>data frame</strong> is an array that associates the <em>observations</em> (downs the rows) with the <em>variables</em> measured on each observation (across the columns). Each cell storse a <strong>value</strong> observed for a variable on an observation.</p>
@@ -583,8 +580,7 @@
 </div><div class="column" style="width:70%;">
 <iframe src="https://giphy.com/embed/Of40xPqggQrde" width="780" height="550" frameborder="0" class="giphy-embed" allowfullscreen="">
 </iframe>
-</div>
-</div>
+</div></div>
 </section>
 <section id="section-3" class="slide level2" data-background-color="black" data-background-image="https://media1.giphy.com/media/92cu6TfCZDVRBkmmDu/giphy.gif?cid=ecf05e47fx13mfnwlup7i5nr1amq03uocrl768itcnx81qf7&amp;ep=v1_gifs_related&amp;rid=giphy.gif&amp;ct=g" data-background-size="200px" data-background-repeat="repeat">
 <h2></h2>
@@ -878,18 +874,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -921,7 +906,47 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/infstat24\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -958,7 +983,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
