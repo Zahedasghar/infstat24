@@ -1,118 +1,111 @@
 ---
-title: "Inferential Statistics (Quantitative Reasoning)"
+title: "Machine Learning and Big Data in Economics"
+title-block-banner: true
+author: "Zahid Asghar"
+date: "2024-09-29"
+categories: [Economics, Big Data, Machine Learning]
+format: 
+  html:
+    logo: "qau1.jpg"
+    theme: [default, custom1.scss]
+    css: style.scss
+execute:
+  freeze: auto
+  echo: false
+  message: false
+  warning: false
+  eval: false
 ---
 
-# Course Description
- Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns,  and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data.  
- 
-> Learn to spot nonsense and call it out. 
- 
-In this course, you'll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students
-are required to finish computer-based assignments. I wish that you learn stuff in this class in a way **learning** is fixed and
-**timing** will be a *variable* but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not
-be able to learn well and perform good in the course. 
+## Course Description:
 
-**Pre-requisite: Basic Statistics or special approval needed**
+This course provides an introduction to machine learning and related methods for big data from an economics perspective. Students will learn modern estimation methods for high-dimensional data, with a focus on causal inference and prediction problems in economics, business, and related fields. Through programming assignments and a final empirical project, students will apply machine learning techniques to real-world data.
 
-## Learning Objectives 
+## Learning Outcomes:
 
-At the end of this course, the student should be able to: 
+By the end of the course, students should be able to:
 
- -  Define and summarize research design and data collection principles and concepts.
- -  Create and interpret graphical data summaries.
- -  Calculate and interpret summary statistics.
- -  Calculate probabilities.
- -  Understand inferential statistics.
- -  Perform hypothesis tests for numerical and categorical data
- -  Calculate confidence interval for numerical and categorical data
- -  ANOVA
+-   Apply machine learning methods to estimate causal effects in experimental and observational settings.
+-   Solve prediction problems in economics using machine learning techniques.
+-   Understand the uses, strengths, and limitations of machine learning for answering economic questions.
+-   Implement machine learning algorithms using Python/R.
+-   Analyze and interpret economic data using machine learning methods.
+-   Conduct an empirical research project utilizing machine learning techniques.
 
-# Required Readings
+## Course Structure and Topics
 
-```{r, echo = FALSE, results="asis", eval=F}
-#bib["vasquez2009twp", "wagner2007ws"]
-```
+### Week 1-2: Introduction to Machine Learning and Big Data in Economics
 
-1.  Christopher D. Barr, David M. Diez, and Mine Çetinkaya-Rundel, OpenIntro Statistics Textbook by
-Center for Open Education 
-2.  David Freedman, Robert Pisani, Roger Purves, Statistics 4th Edition,John Wiley & Sons, New York.
-3.  We will use the latest free version of: R Studio; You'll first need
-    to download (R). JAMOVI/Excel in R is very user friendly way which will
-    also be used.
+-   Overview of big data and machine learning.
+-   Key differences between traditional econometric techniques and machine learning methods.
+-   **Readings**: Taddy, M. (2019), Chapter 1 from *Business Data Science*
 
-# Course Policy
+   ![Big Data](images/big_data.jpg)
 
-I will detail the policy for this course below. Basically, don't cheat
-and try to learn stuff. Don't be that guy.
+### Week 3-4: Supervised Learning and Regression
 
-## Grading Policy
+-   Overview of supervised learning and its relevance to economic data.
+-   **Lab**: Implementing regression methods using Python/R.
+-   **Readings**: Taddy, M. (2019), Chapter 3; Gareth et al. (2017), Chapter 3, 6 from *An Introduction to Statistical Learning*
 
--   **25%** of your grade will be determined by a midterm exam.
+### Week 5-6: Classification and Decision Trees
 
--   **10%** of your grade will be determined by Quiz in class.
+-   Decision trees, random forests.
+-   **Lab**: Decision trees and random forests in Python/R.
+-   **Readings**: Gareth et al. (2017), Chapter 4, 8
 
--   **15%** of your grade will be determined by your attendance and
-    participation in class, and homework. Generally, ask questions and
-    answer them.
+### Week 7-8: Causal Inference Using Machine Learning
 
+-   Randomized control trials vs observational data.
+-   **Readings**: Taddy, M. (2019), Chapter 4 from *Business Data Science*; Angrist & Pischke (2014) Chapter 2 from *Mastering ‘Metrics*
 
--   **50%** of your grade will be determined by a final exam.
+### Week 9-10: Unsupervised Learning
 
-## Attendance Policy
+-   Overview of unsupervised learning: PCA and K-means clustering.
+-   **Lab**: PCA and clustering in Python/R.
+-   **Readings**: Gareth et al. (2017), Chapter 10
 
+### Week 11-12: Model Evaluation and Cross-Validation
 
+-   Methods for model evaluation, cross-validation.
+-   **Lab**: Cross-validation and model selection in Python/R.
+-   **Readings**: Gareth et al. (2017), Chapter 5
 
-> *Showing up is 80 percent of life* -- Woody Allen, [via Marshall
-> Brickman](http://quoteinvestigator.com/2013/06/10/showing-up/#note-6553-1)
+### Week 13-14: Big Data and Machine Learning in Economics
 
-Students should be weary of skipping class. I deduct *all* participation
-points for a class after five unexcused absences and this can have
-important implications for a student's overall grade in the class.
+-   Case studies in business and economics.
+-   **Readings**: Taddy, M. (2019), Chapter 5
 
-## Late Arrival of the Professor Policy
+### Week 15: Advanced Topics and Review
 
-I will inform students via e-mail/others in advance of class if class is
-cancelled for the day due to some unavoidable reason(s).
+-   Ensemble methods: boosting and bagging.
+-   **Lab**: Implementing ensemble methods using Python/R.
+-   **Readings**: Gareth et al. (2017), Chapter 8
 
-## E-mail/Social Media Policy
+### Week 16: Empirical Project Presentations
 
-Discord app will be used for communicating all the class related stuff, queries, and discussions. I may not respond to e-mails or other social media messages. So keep checking the discord app for any updates.
+-   Students present their final empirical projects applying machine learning to a real-world dataset.
 
-## Make-Up Exam Policy
+## Assessment:
 
-There are **NO** make-ups for missed exams. Don't bother asking.
+-   **Assignments (40%)**: Regular programming assignments.
+-   **Midterm Exam (20%)**.
+-   **Final Project (40%)**: Empirical project applying course concepts to data.
 
-## Academic Dishonesty Policy
+## Optional Textbooks:
 
-Don't cheat. Don't be that guy. Yes, you. You know exactly what I'm
-talking about too.
+1.  Taddy, M. (2019) *Business Data Science: Combining Machine Learning and Economics to Optimize Business Decisions*.
 
+2.  ISL Gareth, J.; Witten, D.; Hastie, T.; and Tibshirani, R. (2023) *An Introduction to Statistical Learning* , 2nd Edition. Springer.
 
-# Class Schedule
+3.  Angrist, J. & Pischke, J. (2014) *Mastering ‘Metrics: The Path from Cause to Effect*.
 
-Here is that calendar but may change as per time table of School of
-Economics.
+## Additional Resources
 
+[Foundations of ML](https://maxkasy.github.io/home/ML_Oxford_2024/)
 
-| Week    | Topic Covered                                         | Book Chapter |
-|---------|-------------------------------------------------------|--------------|
-| Week #1 | Introduction to types of studies                                         | OpenIntro and FM Ch.1          |
-| Week #2 | Introduction to data  | OI Ch1        |
-| Week#3  | Review of Probability + R/JAMOVI | OI Ch2 , FM Ch3       |
-| Week#4  | Review of Distribution of Random Variables                                | OI Ch3 +HW#1   |
-| Week#5  | Foundations of Statistical Inference                            | OI Ch4 +Quiz#1     |
-| Week#6  | continued                             | OI Ch4         |
-| Week#7  | continued                         | OI Ch4+HW#2   |
-| Week#8  |            Inference for categorical data            | OI Ch5       |
-| Week#9  | continued                       | SW7+Quiz#2     |
-|         | Mid Term Exam as per SOE date sheet                   |              |
-| Week#11 | Inference for numerical data                                 | OI ch6     |
-| Week#12 | continued                       | OI ch6        |
-| Week#13 | continued                                 | OI ch6        |
-| Week#14 | ANOVA and inference for linear regression                                         |OI ch6 & 7    |
-| Week#15 | Discussion of Empirical Study                        |              |
-| Week#16 | Wrap up                                               |              |
+[The Analytics Edge](https://ocw.mit.edu/courses/15-071-the-analytics-edge-spring-2017/pages/trees/)
 
-: Tentative Schedule 
-(Little variation maybe there as per topic/students need)
+[Machine Learning for Econometrics](https://www.bankofcanada.ca/2023/10/staff-analytical-note-2023-16/)
 
+[Data Science for Economics](https://psantanna.com/Econ520)
