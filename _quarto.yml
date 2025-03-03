@@ -6,7 +6,7 @@ website:
   title: "Inferential Statistics"
   sidebar:
     background: primary
-    logo: "images/ggplot2.png"
+    logo: "images/ML.webp"
     pinned: true
     align: center
     tools:

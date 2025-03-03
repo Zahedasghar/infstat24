@@ -2,32 +2,15 @@
 title: "Course Materials"
 ---
 
-[Datasets](data/)
+## Lectures will be uploaded here
+
+[Datasets](https://trevorhastie.github.io/ISLR/data.html)
 
 
-[Taxonomy of data](https://zahidasghar.com/infstat24/taxonomy.html)
+[Foundations of ML](https://maxkasy.github.io/home/ML_Oxford_2024/)
 
-[Introduction to data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%201/chp1.pdf)
+[The Analytics Edge](https://ocw.mit.edu/courses/15-071-the-analytics-edge-spring-2017/pages/trees/)
 
-[Association and Causation](https://zahidasghar.com/infstat24/association_causation.html)
+[Machine Learning for Econometrics](https://www.bankofcanada.ca/2023/10/staff-analytical-note-2023-16/)
 
-[Inroduction to data Video](https://youtu.be/JqErvErJdmU) 
-
-[Summarising data](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%202/chp2.pdf)
-
-[lab on basics of data](https://zahidasghar.com/infstat24/lab1.html)
-
-
-[Probability](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%203/chp3.pdf)
-
-[Video#1 on Probability ](https://youtu.be/UqXVnd5FoMM)
-
-[Video#2 on Probability (Random Variable)](https://youtu.be/9L4DSofEEqg)
-
-[Distributions](https://github.com/OpenIntroStat/openintro-statistics-slides/blob/master/Chp%204/chp4.pdf)
-
-[Normal distribution video lecture](https://youtu.be/962bzbnC1DA)
-
-
- 
- 
+[Data Science for Economics](https://psantanna.com/Econ520)
