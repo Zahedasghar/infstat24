@@ -4,17 +4,17 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.\n\n\n\nTime\nDays\nPlace\n\n\n\n\n0930-1045\nMonday, Tuesdayd\nRoom#9",
+    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#course-schedule",
-    "href": "schedule.html#course-schedule",
+    "objectID": "schedule.html#weekly-schedule",
+    "href": "schedule.html#weekly-schedule",
     "title": "Schedule",
     "section": "",
-    "text": "The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.\n\n\n\nTime\nDays\nPlace\n\n\n\n\n0930-1045\nMonday, Tuesdayd\nRoom#9",
+    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
@@ -24,7 +24,7 @@
     "href": "schedule.html#assignments",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due by Sunday at 11:59pm. You will have at least 11/12 days to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD.",
+    "text": "Assignments\nBelow are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.\n\n\nLabs\nLabs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.\n\n\nExams\nThere will be two exams on the dates TBD by School of Economics.",
     "crumbs": [
       "Schedule"
     ]
@@ -51,71 +51,116 @@
     "text": "450 counties\nDistance from Martin Luther’s birthplace: Wittenberg (Germany) place of Protestant Reformation\n\nThe result: the closer counties were to the center of the Protestant movement, the higher their average incomes were—and the higher their literacy rates too. And after controlling for literacy rates, distance from Wittenberg no longer predicted higher income. To the extent that living near the origin of the Protestant Reformation raised people’s incomes, it was entirely attributable to gains in the ability to read and write."
   },
   {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Excerpts of Fall 2021 syllabus from STA 199: Introduction to Data Science at Duke University"
+  },
+  {
+    "objectID": "syllabus.html#course-learning-objectives",
+    "href": "syllabus.html#course-learning-objectives",
+    "title": "Syllabus",
+    "section": "Course Learning Objectives",
+    "text": "Course Learning Objectives\nBy the end of the semester, you will…\n\nlearn to explore, visualize, and analyze data in a reproducible and shareable manner using posit.cloud forum\nunderstanding sampling and sampling distributions,p-value, generalizing statistical results, testing of hypothesis and confidence intervals\nlearn to effectively communicate statistical results by taking care of various types of biases."
+  },
+  {
+    "objectID": "syllabus.html#textbooks",
+    "href": "syllabus.html#textbooks",
+    "title": "Syllabus",
+    "section": "Textbooks",
+    "text": "Textbooks\nAll books are freely available online. Hardcopies are also available for purchase.\n\n\n\nOpenintro\nDavid Diez, Christopher Barr, and Mine Çetinkaya-Rundel\nCenter for Open Education\n\n\nStatistics 4th Edition\nJohn Wiley & Sons, New York."
+  },
+  {
+    "objectID": "syllabus.html#course-community",
+    "href": "syllabus.html#course-community",
+    "title": "Syllabus",
+    "section": "Course community",
+    "text": "Course community\n\nInclusive community\nI will do my best to serve students with all background according to their learning needs both in and out of class and the diversity, QAU has, that the students bring to this class be viewed as a resource, strength, and benefit. Your feedback and suggestions will be welcomed.\n\n\nAccessibility\nI am doing my best to keep my course(s) as per required international standards with adjustments as per studentsads’ needs as well. I will try to keep this course as accessible as possible throughout the semester that missing class will even not do much harm.\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website.\nAnnouncements will be made through whatsapp group but stuff and questions threads will be through discord. Please check these sources periodically so you dont miss anything."
+  },
+  {
+    "objectID": "syllabus.html#activities-assessment",
+    "href": "syllabus.html#activities-assessment",
+    "title": "Syllabus",
+    "section": "Activities & Assessment",
+    "text": "Activities & Assessment\n\nLabs\nIn labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation.\n\n\nHomework\nIn homework, you will apply what you’ve learned during lecture and lab to complete data analysis tasks.\n\n\nExams\nThere will be two, mid term and final exam. Through these exams you have the opportunity to demonstrate what you’ve learned in the course thus far.\n\n\nFinal Project\nThe purpose of the final project is to apply what you’ve learned throughout the semester to analyze an interesting data-driven research question.\n\n\n\nCategory\nPercentage\n\n\n\n\nHomework\n10%\n\n\nLabs\n10%\n\n\nFinal\n50%\n\n\nMid-term\n25%\n\n\nIn-class exercises/quiz\n5%"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Machine Learning and Big Data in Economics",
+    "title": "Inferential Statistics",
     "section": "",
-    "text": "This course provides an introduction to machine learning and related methods for big data from an economics perspective. Students will learn modern estimation methods for high-dimensional data, with a focus on causal inference and prediction problems in economics, business, and related fields. Through programming assignments and a final empirical project, students will apply machine learning techniques to real-world data.",
+    "text": "In this course, you’ll learn how to use statistical techniques to make inferences and estimations using numerical and categorical data. Students are required to finish computer-based assignments. I wish that you learn stuff in this class in a way learning is fixed and timing will be a variable but due to some regulatory issues, some hybrid model will be followed. Without active engagement, you will not be able to learn well and perform good in the course.\nPre-requisite: Basic Statistics or special approval needed\n\n\nAt the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Machine Learning and Big Data in Economics",
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Inferential Statistics",
     "section": "",
-    "text": "This course provides an introduction to machine learning and related methods for big data from an economics perspective. Students will learn modern estimation methods for high-dimensional data, with a focus on causal inference and prediction problems in economics, business, and related fields. Through programming assignments and a final empirical project, students will apply machine learning techniques to real-world data.",
+    "text": "At the end of this course, the student should be able to:\n\nDefine and summarize research design and data collection principles and concepts.\nCreate and interpret graphical data summaries.\nCalculate and interpret summary statistics.\nCalculate probabilities.\nUnderstand inferential statistics.\nPerform hypothesis tests for numerical and categorical data\nCalculate confidence interval for numerical and categorical data\nANOVA",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#learning-outcomes",
-    "href": "index.html#learning-outcomes",
-    "title": "Machine Learning and Big Data in Economics",
-    "section": "Learning Outcomes:",
-    "text": "Learning Outcomes:\nBy the end of the course, students should be able to:\n\nApply machine learning methods to estimate causal effects in experimental and observational settings.\nSolve prediction problems in economics using machine learning techniques.\nUnderstand the uses, strengths, and limitations of machine learning for answering economic questions.\nImplement machine learning algorithms using Python/R.\nAnalyze and interpret economic data using machine learning methods.\nConduct an empirical research project utilizing machine learning techniques.",
+    "objectID": "index.html#grading-policy",
+    "href": "index.html#grading-policy",
+    "title": "Inferential Statistics",
+    "section": "Grading Policy",
+    "text": "Grading Policy\n\n25% of your grade will be determined by a midterm exam.\n10% of your grade will be determined by Quiz in class.\n15% of your grade will be determined by your attendance and participation in class, and homework. Generally, ask questions and answer them.\n20% of your grade will be determined by a 20-page term paper on when exactly “The Love Boat” jumped the proverbial shark. You will address whether this shark-jumping can be attributed to Ted McGinley, the introduction of Jill Whelan as “Vicki”, or some other cause.\n50% of your grade will be determined by a final exam.",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#course-structure-and-topics",
-    "href": "index.html#course-structure-and-topics",
-    "title": "Machine Learning and Big Data in Economics",
-    "section": "Course Structure and Topics",
-    "text": "Course Structure and Topics\n\nWeek 1-2: Introduction to Machine Learning and Big Data in Economics\n\nOverview of big data and machine learning.\nKey differences between traditional econometric techniques and machine learning methods.\nReadings: Taddy, M. (2019), Chapter 1 from Business Data Science\n\n\n\n\nBig Data\n\n\n\n\nWeek 3-4: Supervised Learning and Regression\n\nOverview of supervised learning and its relevance to economic data.\nLab: Implementing regression methods using Python/R.\nReadings: Taddy, M. (2019), Chapter 3; Gareth et al. (2017), Chapter 3, 6 from An Introduction to Statistical Learning\n\n\n\nWeek 5-6: Classification and Decision Trees\n\nDecision trees, random forests.\nLab: Decision trees and random forests in Python/R.\nReadings: Gareth et al. (2017), Chapter 4, 8\n\n\n\nWeek 7-8: Causal Inference Using Machine Learning\n\nRandomized control trials vs observational data.\nReadings: Taddy, M. (2019), Chapter 4 from Business Data Science; Angrist & Pischke (2014) Chapter 2 from Mastering ’Metrics\n\n\n\nWeek 9-10: Unsupervised Learning\n\nOverview of unsupervised learning: PCA and K-means clustering.\nLab: PCA and clustering in Python/R.\nReadings: Gareth et al. (2017), Chapter 10\n\n\n\nWeek 11-12: Model Evaluation and Cross-Validation\n\nMethods for model evaluation, cross-validation.\nLab: Cross-validation and model selection in Python/R.\nReadings: Gareth et al. (2017), Chapter 5\n\n\n\nWeek 13-14: Big Data and Machine Learning in Economics\n\nCase studies in business and economics.\nReadings: Taddy, M. (2019), Chapter 5\n\n\n\nWeek 15: Advanced Topics and Review\n\nEnsemble methods: boosting and bagging.\nLab: Implementing ensemble methods using Python/R.\nReadings: Gareth et al. (2017), Chapter 8\n\n\n\nWeek 16: Empirical Project Presentations\n\nStudents present their final empirical projects applying machine learning to a real-world dataset.",
+    "objectID": "index.html#attendance-policy",
+    "href": "index.html#attendance-policy",
+    "title": "Inferential Statistics",
+    "section": "Attendance Policy",
+    "text": "Attendance Policy\n\nShowing up is 80 percent of life – Woody Allen, via Marshall Brickman\n\nStudents should be weary of skipping class. I deduct all participation points for a class after five unexcused absences and this can have important implications for a student’s overall grade in the class.",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#assessment",
-    "href": "index.html#assessment",
-    "title": "Machine Learning and Big Data in Economics",
-    "section": "Assessment:",
-    "text": "Assessment:\n\nAssignments (40%): Regular programming assignments.\nMidterm Exam (20%).\nFinal Project (40%): Empirical project applying course concepts to data.",
+    "objectID": "index.html#late-arrival-of-the-professor-policy",
+    "href": "index.html#late-arrival-of-the-professor-policy",
+    "title": "Inferential Statistics",
+    "section": "Late Arrival of the Professor Policy",
+    "text": "Late Arrival of the Professor Policy\nI will inform students via e-mail/others in advance of class if class is cancelled for the day due to some unavoidable reason(s).",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#optional-textbooks",
-    "href": "index.html#optional-textbooks",
-    "title": "Machine Learning and Big Data in Economics",
-    "section": "Optional Textbooks:",
-    "text": "Optional Textbooks:\n\nTaddy, M. (2019) Business Data Science: Combining Machine Learning and Economics to Optimize Business Decisions.\nISL Gareth, J.; Witten, D.; Hastie, T.; and Tibshirani, R. (2023) An Introduction to Statistical Learning , 2nd Edition. Springer.\nAngrist, J. & Pischke, J. (2014) Mastering ’Metrics: The Path from Cause to Effect.",
+    "objectID": "index.html#e-mailsocial-media-policy",
+    "href": "index.html#e-mailsocial-media-policy",
+    "title": "Inferential Statistics",
+    "section": "E-mail/Social Media Policy",
+    "text": "E-mail/Social Media Policy\nI am usually quick to respond to student messages sent through e-mails. However, student other e-media messages are some times send messages which dont need any response from my side and they can visit me in my office hours.",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#additional-resources",
-    "href": "index.html#additional-resources",
-    "title": "Machine Learning and Big Data in Economics",
-    "section": "Additional Resources",
-    "text": "Additional Resources\nFoundations of ML\nThe Analytics Edge\nMachine Learning for Econometrics\nData Science for Economics",
+    "objectID": "index.html#make-up-exam-policy",
+    "href": "index.html#make-up-exam-policy",
+    "title": "Inferential Statistics",
+    "section": "Make-Up Exam Policy",
+    "text": "Make-Up Exam Policy\nThere are NO make-ups for missed exams. Don’t bother asking.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#academic-dishonesty-policy",
+    "href": "index.html#academic-dishonesty-policy",
+    "title": "Inferential Statistics",
+    "section": "Academic Dishonesty Policy",
+    "text": "Academic Dishonesty Policy\nDon’t cheat. Don’t be that guy. Yes, you. You know exactly what I’m talking about too.",
     "crumbs": [
       "Home"
     ]
