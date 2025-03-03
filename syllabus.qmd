@@ -1,0 +1,69 @@
+---
+title: "Syllabus"
+---
+
+**Excerpts of Fall 2021 syllabus from STA 199: Introduction to Data Science at Duke University**
+
+<hr>
+
+## Course Learning Objectives
+
+By the end of the semester, you will...
+
+-   learn to explore, visualize, and analyze data in a reproducible and shareable manner using posit.cloud forum
+-   understanding sampling and sampling distributions,p-value, generalizing statistical results, testing of hypothesis and confidence intervals
+-   learn to effectively communicate statistical results by taking care of various types of biases.
+
+## Textbooks
+
+All books are freely available online. Hardcopies are also available for purchase.
+
+|                                                                         |                          |                                   |
+|------------------------------------|------------------|------------------|
+| [Openintro](https://www.openintro.org/book/os/)                            | David Diez, Christopher Barr, and Mine Çetinkaya-Rundel      | Center for Open Education     |
+| [Statistics 4th Edition](https://wwnorton.com/books/Statistics/) | John Wiley & Sons, New York.|
+
+## Course community
+
+### Inclusive community
+
+I will do my best to serve students with all background according to their learning needs both in and out of class and the diversity, QAU has, that the students bring to this class be viewed as a resource, strength, and benefit. Your feedback and suggestions will be welcomed.
+
+### Accessibility
+
+I am doing my best to keep my course(s) as per required international standards with adjustments as per studentsads' needs as  well. I will try to keep this course as accessible as possible throughout the semester that missing class will even not do much harm.
+
+### Communication
+
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website.
+
+Announcements will be made through whatsapp group but stuff and questions threads will be through discord. Please check these sources periodically so you dont miss anything.
+
+## Activities & Assessment
+
+### Labs
+
+In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation.
+
+### Homework
+
+In homework, you will apply what you've learned during lecture and lab to complete data analysis tasks.
+
+### Exams
+
+There will be two, mid term and final exam. Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
+
+### Final Project
+
+The purpose of the [final project](/project/) is to apply what you've learned throughout the semester to analyze an interesting data-driven research question.
+
+
+
+| Category           | Percentage |
+|--------------------|------------|
+| Homework           | 10%        |
+| Labs               | 10%        |
+| Final       | 50%        |
+| Mid-term            | 25%      |
+| In-class exercises/quiz | 5%         |
+

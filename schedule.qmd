@@ -1,30 +1,27 @@
 ---
 title: "Schedule"
-#listing:
-#  - id: schedule
-#    contents:
-#      
-#    type: table
-#    fields: [title, description, subtitle]
-#    field-display-names:
-#      title: "Week"
-#     description: "Dates"
-#     subtitle: "Topic"
-#   date-format: "MMMM DD, YYYY"
-#   sort: [filename]
-#   sort-ui: false
-#   filter-ui: false
+listing:
+  - id: schedule
+    contents:
+      - weeks/week-*.qmd
+    type: table
+    fields: [title, description, subtitle]
+    field-display-names:
+      title: "Week"
+      description: "Dates"
+      subtitle: "Topic"
+    date-format: "MMMM DD, YYYY"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
  #tbl-colwidths: [5,20,50,25]
 editor: visual
 ---
 
-## Course Schedule
+## Weekly schedule
 
-The schedule below is tentative and subject to change. You are responsible for keeping up with any changes made to the schedule.
-
-| Time      | Days             | Place  |
-|-----------|------------------|--------|
-| 0930-1045 | Monday, Tuesdayd | Room#9 |
+::: {#schedule}
+:::
 
 ## Assignments
 
@@ -32,7 +29,7 @@ Below are assignment due dates for the semester. You can find details and assign
 
 ### Homework
 
-Homework will be due by Sunday at 11:59pm. You will have at least 11/12 days to complete each homework assignment.
+Homework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.
 
 ### Labs
 
@@ -40,4 +37,4 @@ Labs will be due on Fridays at 11:59pm. You will start the lab during your sched
 
 ### Exams
 
-There will be two exams on the dates TBD.
+There will be two exams on the dates TBD by School of Economics.
